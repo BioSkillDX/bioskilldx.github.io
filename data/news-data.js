@@ -8,7 +8,7 @@ var NEWS_DATA = {
         "en": "Announcement"
       },
       "title": {
-        "ja": "BioSkillDX公式ウェブサイトを公開しました",
+        "ja": "BioSkillDX公式ウェブサイトを公開",
         "en": "BioSkillDX Official Website Launched"
       },
       "content": {
