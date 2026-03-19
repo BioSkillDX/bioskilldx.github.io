@@ -307,6 +307,14 @@
       // Update html lang attribute
       document.documentElement.lang = lang;
 
+      // Update contact form URL based on language
+      const contactBtn = document.getElementById('contactBtn');
+      if (contactBtn) {
+        contactBtn.href = lang === 'en'
+          ? 'https://forms.gle/15sTfWH2rPgdMhLE9'
+          : 'https://forms.gle/Hz3kwcN9M9HQGWse6';
+      }
+
       // Reload news and events section with new language
       loadTopNews();
       loadTopEvents();
