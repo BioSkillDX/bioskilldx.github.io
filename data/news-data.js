@@ -1,6 +1,26 @@
 var NEWS_DATA = {
   "news": [
     {
+      "id": "4",
+      "date": "2026.03.19",
+      "category": {
+        "ja": "お知らせ",
+        "en": "Announcement"
+      },
+      "title": {
+        "ja": "BioSkillDX公式ウェブサイトを公開しました",
+        "en": "BioSkillDX Official Website Launched"
+      },
+      "content": {
+        "ja": [
+          "BioSkillDXプロジェクトの公式ウェブサイトを公開しました。プロジェクトの最新情報やイベント情報などを発信してまいります。"
+        ],
+        "en": [
+          "We are pleased to announce the launch of the official BioSkillDX project website. We will be sharing the latest project updates, event information, and more."
+        ]
+      }
+    },
+    {
       "id": "1",
       "date": "2025.10.15",
       "category": {
