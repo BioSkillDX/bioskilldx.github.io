@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BioskillDX - ライフサイエンス実験作業の暗黙知獲得と作業支援">
+  <meta property="og:title" content="BioskillDX">
+  <meta property="og:description" content="ライフサイエンス実験作業の暗黙知獲得と作業支援">
+  <meta property="og:image" content="https://bioskilldx.github.io/img/1200_630.png">
+  <meta property="og:url" content="https://bioskilldx.github.io/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>BioskillDX</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="index.html"><img src="img/logo.svg" alt="BioSkillDX"></a>
+      </h1>
+      <button class="header__menu-btn" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><a href="#about" data-i18n="nav_about">About</a></li>
+          <li><a href="#member" data-i18n="nav_member">Member</a></li>
+          <li><a href="news.html" data-i18n="nav_news">News</a></li>
+          <!-- <li><a href="events.html" data-i18n="nav_events">Events</a></li> -->
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__lang">
+        <button class="header__lang-btn is-active" data-lang="ja">JA</button>
+        <span class="header__lang-divider">/</span>
+        <button class="header__lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- KV Section -->
+    <section class="kv" id="kv">
+      <div class="kv__inner">
+        <div class="kv__content">
+          <h2 class="kv__title fade-in">
+            <img src="img/logo.svg" alt="BioSkillDX" class="kv__logo">
+          </h2>
+          <p class="kv__description fade-in" data-i18n="kv_description">ライフサイエンス実験作業の
+暗黙知獲得と作業支援</p>
+          <a href="#contact" class="kv__btn fade-in">
+            <span data-i18n="kv_btn">お問い合わせ</span>
+            <span class="kv__btn-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
+            </span>
+          </a>
+        </div>
+        <div class="kv__image fade-in">
+          <img src="img/kv-movie.gif" alt="BioSkillDX イラスト" class="kv__illustration">
+        </div>
+      </div>
+      <div class="kv__scroll">
+        <span>Scroll</span>
+        <div class="kv__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Company Logo Marquee -->
+    <section class="logo-marquee">
+      <div class="container">
+        <div class="logo-marquee__track">
+          <div class="logo-marquee__inner">
+          <img src="img/company/ptbio.jpg" alt="Company Logo">
+          <img src="img/company/chiba-university.png" alt="Company Logo">
+          <img src="img/company/science-tokyo.jpg" alt="Company Logo">
+          <img src="img/company/sinicx.png" alt="SinicX Logo" style="height: 25px;">
+          <img src="img/company/oist.jpg" alt="OIST Logo" style="height: 65px;">
+          <img src="img/company/hitachi.png" alt="Hitachi Logo" style="height: 65px;">
+          <img src="img/company/utokyo.jpg" alt="UTokyo Logo" style="height: 65px;">
+          <img src="img/company/aist.png" alt="AIST Logo" style="height: 65px;">
+          <img src="img/company/ptbio.jpg" alt="Company Logo">
+          <img src="img/company/chiba-university.png" alt="Company Logo">
+          <img src="img/company/science-tokyo.jpg" alt="Company Logo">
+          <img src="img/company/sinicx.png" alt="SinicX Logo" style="height: 25px;">
+          <img src="img/company/oist.jpg" alt="OIST Logo" style="height: 65px;">
+          <img src="img/company/hitachi.png" alt="Hitachi Logo" style="height: 65px;">
+          <img src="img/company/utokyo.jpg" alt="UTokyo Logo" style="height: 65px;">
+          <img src="img/company/aist.png" alt="AIST Logo" style="height: 65px;">
+          <img src="img/company/ptbio.jpg" alt="Company Logo">
+          <img src="img/company/chiba-university.png" alt="Company Logo">
+          <img src="img/company/science-tokyo.jpg" alt="Company Logo">
+          <img src="img/company/sinicx.png" alt="SinicX Logo" style="height: 25px;">
+          <img src="img/company/oist.jpg" alt="OIST Logo" style="height: 65px;">
+          <img src="img/company/hitachi.png" alt="Hitachi Logo" style="height: 65px;">
+          <img src="img/company/utokyo.jpg" alt="UTokyo Logo" style="height: 65px;">
+          <img src="img/company/aist.png" alt="AIST Logo" style="height: 65px;">
+          <img src="img/company/ptbio.jpg" alt="Company Logo">
+          <img src="img/company/chiba-university.png" alt="Company Logo">
+          <img src="img/company/science-tokyo.jpg" alt="Company Logo">
+          <img src="img/company/sinicx.png" alt="SinicX Logo" style="height: 25px;">
+          <img src="img/company/oist.jpg" alt="OIST Logo" style="height: 65px;">
+          <img src="img/company/hitachi.png" alt="Hitachi Logo" style="height: 65px;">
+          <img src="img/company/utokyo.jpg" alt="UTokyo Logo" style="height: 65px;">
+          <img src="img/company/aist.png" alt="AIST Logo" style="height: 65px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__wrapper">
+          <div class="about__left fade-in">
+            <h2 class="about__title">About</h2>
+            <h3 class="about__subtitle" data-i18n="about_subtitle">BioSkillDXとは？</h3>
+            <p class="about__description" data-i18n="about_description">
+              本研究開発では、ライフサイエンス分野の研究開発の現場における実験作業のノウハウの効率的な蓄積と伝承に貢献することを目指し、大規模ライフサイエンス実験作業データセットの構築と実験作業に関する暗黙知獲得のためのAI技術の開発を行います。
+            </p>
+          </div>
+          <div class="about__right">
+            <div class="about__feature fade-in">
+              <div class="about__feature-icon">
+                <img src="img/About_01.png" alt="ライフサイエンス">
+              </div>
+              <div class="about__feature-text">
+                <p class="about__feature-category" data-i18n="about_cat1">ライフサイエンス</p>
+                <h3 class="about__feature-title" data-i18n="about_title1">実験作業データ・暗黙知の集積</h3>
+              </div>
+            </div>
+            <div class="about__feature fade-in">
+              <div class="about__feature-icon">
+                <img src="img/About_02.png" alt="AI">
+              </div>
+              <div class="about__feature-text">
+                <p class="about__feature-category" data-i18n="about_cat2">AI</p>
+                <h3 class="about__feature-title" data-i18n="about_title2">暗黙知獲得 AIモデル構築</h3>
+              </div>
+            </div>
+            <div class="about__feature fade-in">
+              <div class="about__feature-icon">
+                <img src="img/About_03.png" alt="ロボティクス">
+              </div>
+              <div class="about__feature-text">
+                <p class="about__feature-category" data-i18n="about_cat3">ロボティクス</p>
+                <h3 class="about__feature-title" data-i18n="about_title3">アシストシステムの開発</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Member Section -->
+    <section class="member" id="member">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-header__title fade-in">Member</h2>
+        </div>
+        <div class="member__list">
+          <div class="member__item fade-in">
+            <div class="member__image">
+              <img src="img/member/sato-yoichi.jpg" alt="佐藤 洋一">
+            </div>
+            <div class="member__info">
+              <h3 class="member__name" data-i18n="member1_name">佐藤 洋一</h3>
+              <p class="member__title"><span class="member__role" data-i18n="member_pi_label">（研究代表者）</span><span data-i18n="member1_title">東京大学</span></p>
+            </div>
+          </div>
+          <div class="member__item fade-in">
+            <div class="member__image">
+              <img src="img/member/ono-hiromasa.jpg" alt="小野 浩雅">
+            </div>
+            <div class="member__info">
+              <h3 class="member__name" data-i18n="member2_name">小野 浩雅</h3>
+              <p class="member__title" data-i18n="member2_title">プラチナバイオ株式会社</p>
+            </div>
+          </div>
+          <div class="member__item fade-in">
+            <div class="member__image">
+              <img src="img/member/ohta-tazro.jpg" alt="大田 達郎">
+            </div>
+            <div class="member__info">
+              <h3 class="member__name" data-i18n="member3_name">大田 達郎</h3>
+              <p class="member__title" data-i18n="member3_title">千葉大学</p>
+            </div>
+          </div>
+          <div class="member__item fade-in">
+            <div class="member__image">
+              <img src="img/member/ohnuma-kiyoshi.jpg" alt="大沼 清">
+            </div>
+            <div class="member__info">
+              <h3 class="member__name" data-i18n="member4_name">大沼 清</h3>
+              <p class="member__title" data-i18n="member4_title">長岡技術科学大学</p>
+            </div>
+          </div>
+          <div class="member__item fade-in">
+            <div class="member__image">
+              <img src="img/member/kanda-motonori.jpg" alt="神田 元紀">
+            </div>
+            <div class="member__info">
+              <h3 class="member__name" data-i18n="member5_name">神田 元紀</h3>
+              <p class="member__title" data-i18n="member5_title">東京科学大学</p>
+            </div>
+          </div>
+          <div class="member__item fade-in">
+            <div class="member__image">
+              <img src="img/member/sasagawa-yohei.png" alt="笹川 洋平">
+            </div>
+            <div class="member__info">
+              <h3 class="member__name" data-i18n="member6_name">笹川 洋平</h3>
+              <p class="member__title" data-i18n="member6_title">東京科学大学</p>
+            </div>
+          </div>
+          <div class="member__item fade-in">
+            <div class="member__image">
+              <img src="img/member/satoh-shinichi.jpg" alt="佐藤 真一">
+            </div>
+            <div class="member__info">
+              <h3 class="member__name" data-i18n="member7_name">佐藤 真一</h3>
+              <p class="member__title" data-i18n="member7_title">国立情報学研究所</p>
+            </div>
+          </div>
+          <div class="member__item fade-in">
+            <div class="member__image">
+              <img src="img/member/hashimoto-atsushi.jpg" alt="橋本 敦史">
+            </div>
+            <div class="member__info">
+              <h3 class="member__name" data-i18n="member8_name">橋本 敦史</h3>
+              <p class="member__title" data-i18n="member8_title">オムロン サイニックエックス株式会社</p>
+            </div>
+          </div>
+          <div class="member__item fade-in">
+            <div class="member__image">
+              <img src="img/member/fujie-manabu.jpg" alt="藤江 学">
+            </div>
+            <div class="member__info">
+              <h3 class="member__name" data-i18n="member9_name">藤江 学</h3>
+              <p class="member__title" data-i18n="member9_title">沖縄科学技術大学院大学</p>
+            </div>
+          </div>
+          <div class="member__item fade-in">
+            <div class="member__image">
+              <img src="img/member/mitsuyama-totai.jpg" alt="光山 統泰">
+            </div>
+            <div class="member__info">
+              <h3 class="member__name" data-i18n="member10_name">光山 統泰</h3>
+              <p class="member__title" data-i18n="member10_title">産業技術総合研究所</p>
+            </div>
+          </div>
+          <div class="member__item fade-in">
+            <div class="member__image">
+              <img src="img/member/miyata-natsuki.jpg" alt="宮田 なつき">
+            </div>
+            <div class="member__info">
+              <h3 class="member__name" data-i18n="member11_name">宮田 なつき</h3>
+              <p class="member__title" data-i18n="member11_title">産業技術総合研究所</p>
+            </div>
+          </div>
+          <div class="member__item fade-in">
+            <div class="member__image">
+              <img src="img/member/yagi-takuma.jpg" alt="八木 拓真">
+            </div>
+            <div class="member__info">
+              <h3 class="member__name" data-i18n="member12_name">八木 拓真</h3>
+              <p class="member__title" data-i18n="member12_title">産業技術総合研究所</p>
+            </div>
+          </div>
+          <div class="member__item fade-in">
+            <div class="member__image">
+              <img src="img/member/yoshinaga-tomoaki.png" alt="吉永 智明">
+            </div>
+            <div class="member__info">
+              <h3 class="member__name" data-i18n="member13_name">吉永 智明</h3>
+              <p class="member__title" data-i18n="member13_title">株式会社日立製作所</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-top" id="news">
+      <div class="container">
+        <div class="news-top__inner">
+          <div class="news-top__sidebar fade-in">
+            <h2 class="news-top__title">News</h2>
+            <div class="news-top__links">
+              <a href="news.html" class="news-top__all-link" data-i18n="view_news_list">ニュース一覧をみる</a>
+            </div>
+          </div>
+          <div class="news-top__list" id="news-top-list">
+            <!-- News items will be loaded dynamically -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section (Hidden)
+    <section class="events-top" id="events">
+      <div class="container">
+        <div class="events-top__inner">
+          <div class="events-top__sidebar fade-in">
+            <h2 class="events-top__title">Events</h2>
+            <div class="events-top__links">
+              <a href="events.html" class="events-top__all-link" data-i18n="view_events_list">イベント一覧をみる</a>
+            </div>
+          </div>
+          <div class="events-top__list" id="events-top-list">
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- Links Section (hidden) -->
+    <section class="links-top" id="links" style="display:none;">
+      <div class="container">
+        <div class="links-top__inner">
+          <div class="links-top__sidebar fade-in">
+            <h2 class="links-top__title">Links</h2>
+          </div>
+          <div class="links-top__list">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="links-top__item fade-in">
+              <span class="links-top__item-text" data-i18n="footer_link1">外部サイト１</span>
+              <span class="links-top__item-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7"/>
+                  <polyline points="7 7 17 7 17 17"/>
+                </svg>
+              </span>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="links-top__item fade-in">
+              <span class="links-top__item-text" data-i18n="footer_link2">外部サイト２</span>
+              <span class="links-top__item-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7"/>
+                  <polyline points="7 7 17 7 17 17"/>
+                </svg>
+              </span>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="links-top__item fade-in">
+              <span class="links-top__item-text" data-i18n="footer_link3">外部サイト３</span>
+              <span class="links-top__item-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7"/>
+                  <polyline points="7 7 17 7 17 17"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="contact__marquee">
+        <div class="contact__marquee-track">
+          <div class="contact__marquee-inner">
+            <span>BioSkillDX</span>
+            <span>BioSkillDX</span>
+            <span>BioSkillDX</span>
+            <span>BioSkillDX</span>
+          </div>
+          <div class="contact__marquee-inner">
+            <span>BioSkillDX</span>
+            <span>BioSkillDX</span>
+            <span>BioSkillDX</span>
+            <span>BioSkillDX</span>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="contact__wrapper">
+          <div class="contact__left fade-in">
+            <h2 class="contact__title">Contact</h2>
+            <p class="contact__text" data-i18n="contact_text">ご質問やお問い合わせはこちらからお願いいたします。</p>
+          </div>
+          <div class="contact__right fade-in">
+            <a href="mailto:info@bioskilldx.com" class="contact__btn">
+              <span data-i18n="contact_btn">お問い合わせ</span>
+              <span class="contact__btn-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__left">
+        <div class="footer__logo">
+          <a href="index.html"><img src="img/logo.svg" alt="BioSkillDX"></a>
+        </div>
+        <div class="footer__research">
+          <p class="footer__research-text" data-i18n="footer_research_area_name"><a href="https://www.jst.go.jp/k-program/" target="_blank" rel="noopener noreferrer">JST K Program 経済安全保障重要技術育成プログラム</a><br><a href="https://www.jst.go.jp/k-program/program/cyber4.html" target="_blank" rel="noopener noreferrer">ノウハウの効果的な伝承につながる人作業伝達等の研究デジタル基盤技術</a></p>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer__nav-group">
+          <h4 class="footer__nav-title" data-i18n="footer_menu">メニュー</h4>
+          <nav class="footer__nav">
+            <ul>
+              <li><a href="#about" data-i18n="footer_about">私たちについて</a></li>
+              <li><a href="#member" data-i18n="footer_member">メンバー</a></li>
+              <li><a href="news.html" data-i18n="footer_news">ニュース</a></li>
+              <!-- <li><a href="events.html" data-i18n="footer_events">イベント</a></li> -->
+              <li><a href="#contact" data-i18n="footer_contact">お問い合わせ</a></li>
+              <li><a href="brand-assets.html" data-i18n="footer_brand">ブランド素材</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2026 BioSkillDX. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="data/news-data.js"></script>
+  <script src="data/events-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
