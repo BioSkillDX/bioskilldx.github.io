@@ -17,5 +17,7 @@
   ],
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "start_url": "https://bioskilldx.github.io/",
+  "scope": "https://bioskilldx.github.io/"
 }

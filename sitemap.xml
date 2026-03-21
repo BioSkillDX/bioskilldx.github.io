@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- NOTE: ニュース記事を追加する際は news-detail.html のエントリも追加してください -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bioskilldx.github.io/</loc>
@@ -13,15 +14,35 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bioskilldx.github.io/news-detail.html?id=4</loc>
+    <lastmod>2026-03-19</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bioskilldx.github.io/news-detail.html?id=1</loc>
+    <lastmod>2025-10-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bioskilldx.github.io/news-detail.html?id=2</loc>
+    <lastmod>2025-10-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bioskilldx.github.io/news-detail.html?id=3</loc>
+    <lastmod>2025-10-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://bioskilldx.github.io/events.html</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bioskilldx.github.io/brand-assets.html</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
 </urlset>
