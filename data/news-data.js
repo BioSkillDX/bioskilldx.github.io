@@ -12,7 +12,7 @@ var NEWS_DATA = {
         "en": "\"The Future Envisioned by Wet Lab DX and BioSkill-Legacy\" Published in Jikken Igaku (Experimental Medicine), May 2026"
       },
       "link": {
-        "url": "https://www.yodosha.co.jp/jikkenigaku/articles/index.html?ci=634900",
+        "url": "https://doi.org/10.18958/7947-00001-0006349-00",
         "text": {
           "ja": "詳細はこちら",
           "en": "Learn more"
