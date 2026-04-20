@@ -1,6 +1,35 @@
 var NEWS_DATA = {
   "news": [
     {
+      "id": "5",
+      "date": "2026.04.20",
+      "category": {
+        "ja": "掲載情報",
+        "en": "Publication"
+      },
+      "title": {
+        "ja": "実験医学2026年5月号に「Wet実験DXとBioSkill-Legacyが描く未来」が掲載されました",
+        "en": "\"The Future Envisioned by Wet Lab DX and BioSkill-Legacy\" Published in Jikken Igaku (Experimental Medicine), May 2026"
+      },
+      "link": {
+        "url": "https://www.yodosha.co.jp/jikkenigaku/articles/index.html?ci=634900",
+        "text": {
+          "ja": "詳細はこちら",
+          "en": "Learn more"
+        }
+      },
+      "content": {
+        "ja": [
+          "BioSkillDXプロジェクトメンバーによる記事「Wet実験DXとBioSkill-Legacyが描く未来」が実験医学 2026年5月号(Vol.44 No.8)に掲載されました。Wet実験のDXを電子実験ノート、実験動画、環境・機器ログ、音声文字起こしなどの観点から整理し、再現性向上に資する実装例を提示するとともに、BioSkillDXプロジェクトにおける暗黙知の構造化と技能継承への取り組みを紹介しています。",
+          "著者:笹川洋平、大田達郎、小野浩雅、二階堂 愛、林 哲太郎、藤江 学、矢野 実"
+        ],
+        "en": [
+          "An article titled \"The Future Envisioned by Wet Lab DX and BioSkill-Legacy\" by BioSkillDX project members has been published in Jikken Igaku (Experimental Medicine), May 2026 (Vol.44 No.8). The article organizes the DX of wet lab experiments from the perspectives of electronic lab notebooks, experimental videos, environmental and equipment logs, and audio transcription, presents implementation examples that contribute to improving reproducibility, and introduces the project's efforts to structure tacit knowledge and promote skill transfer.",
+          "Authors: Yohei Sasagawa, Tatsuro Ota, Hiromasa Ono, Itoshi Nikaido, Tetsutaro Hayashi, Manabu Fujie, Minoru Yano"
+        ]
+      }
+    },
+    {
       "id": "4",
       "date": "2026.03.19",
       "category": {
