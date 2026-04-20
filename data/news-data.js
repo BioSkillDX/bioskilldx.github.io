@@ -32,6 +32,35 @@ var NEWS_DATA = {
       }
     },
     {
+      "id": "6",
+      "date": "2026.03.04",
+      "category": {
+        "ja": "掲載情報",
+        "en": "Publication"
+      },
+      "title": {
+        "ja": "KRP LabPlusに「わずか2カ月でテラバイト級の実験映像データを収集 プロジェクト推進に弾みをつける オムロン サイニックエックス株式会社」が掲載されました",
+        "en": "KRP LabPlus Publishes Article \"Omron SINIC X Collects Terabyte-Scale Experimental Video Data in Just Two Months, Giving Momentum to the Project\""
+      },
+      "link": {
+        "url": "https://www.krp.co.jp/labplus/blog/detail/5389.html",
+        "text": {
+          "ja": "詳細はこちら",
+          "en": "Learn more"
+        }
+      },
+      "content": {
+        "ja": [
+          "京都リサーチパーク株式会社の運営するシェアラボ「ターンキーラボ健都」の活用事例を紹介するメディア「KRP LabPlus」に、BioSkillDXプロジェクトに参画するオムロン サイニックエックス株式会社 PI 兼 東京大学協力研究員 橋本敦史氏のインタビュー記事が掲載されました。",
+          "記事では、株式会社ワールドインテックの協力のもと、ターンキーラボ健都で約2カ月間にわたり6台のカメラを用いて細胞培養実験を収録し、1日最大1,200GBに及ぶ映像データを収集した事例が紹介されています。今後はプロトコルと実験映像をクロスモーダルに解析することで熟練者の暗黙知を可視化し、将来的には「実験作業のGitHub」の構築を目指す展望が語られています。"
+        ],
+        "en": [
+          "An interview with Atsushi Hashimoto, Principal Investigator at Omron SINIC X Corporation and Collaborative Researcher at the University of Tokyo, who participates in the BioSkillDX project, has been published on KRP LabPlus — a media outlet introducing case studies of Turn Key Lab Kento, the shared lab operated by Kyoto Research Park.",
+          "The article describes how, with the cooperation of WORLD INTEC CO., LTD., cell culture experiments were recorded at Turn Key Lab Kento over approximately two months using six cameras, collecting up to 1,200 GB of video data per day. It also discusses plans to visualize the tacit knowledge of experts through cross-modal analysis of protocols and experimental videos, with a long-term vision of building a \"GitHub for experimental procedures.\""
+        ]
+      }
+    },
+    {
       "id": "4",
       "date": "2026.03.19",
       "category": {
