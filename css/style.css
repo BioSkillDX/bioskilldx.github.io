@@ -2129,6 +2129,16 @@ input, textarea {
   height: 16px;
 }
 
+.article-detail__content p a {
+  color: #AC93C8;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.article-detail__content p a:hover {
+  opacity: 0.75;
+}
+
 .article-detail__content p:last-child {
   margin-bottom: 0;
 }
