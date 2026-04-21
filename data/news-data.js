@@ -22,7 +22,7 @@ var NEWS_DATA = {
         "ja": [
           "BioSkillDXプロジェクトメンバーによる記事「Wet実験DXとBioSkill-Legacyが描く未来」が実験医学 2026年5月号(Vol.44 No.8)に掲載されました。Wet実験のDXを電子実験ノート、実験動画、環境・機器ログ、音声文字起こしなどの観点から整理し、再現性向上に資する実装例を提示するとともに、BioSkillDXプロジェクトにおける暗黙知の構造化と技能継承への取り組みを紹介しています。",
           "掲載号：<a href=\"https://www.yodosha.co.jp/jikkenigaku/book/9784758126038/\" target=\"_blank\" rel=\"noopener noreferrer\">実験医学 2026年5月号(Vol.44 No.8)</a>",
-          "著者：笹川洋平、大田達郎、小野浩雅、二階堂 愛、林 哲太郎、藤江 学、矢野 実"
+          "著者：笹川 洋平、大田 達郎、小野 浩雅、二階堂 愛、林 哲太郎、藤江 学、矢野 実"
         ],
         "en": [
           "An article titled \"The Future Envisioned by Wet Lab DX and BioSkill-Legacy\" by BioSkillDX project members has been published in Jikken Igaku (Experimental Medicine), May 2026 (Vol.44 No.8). The article organizes the DX of wet lab experiments from the perspectives of electronic lab notebooks, experimental videos, environmental and equipment logs, and audio transcription, presents implementation examples that contribute to improving reproducibility, and introduces the project's efforts to structure tacit knowledge and promote skill transfer.",
