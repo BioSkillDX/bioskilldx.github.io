@@ -171,9 +171,14 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
   background: var(--paper);
   font-family: var(--font-mono);
   font-size: 10px;
+  line-height: 1;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--ink-3);
+}
+.substrip > div {
+  display: flex;
+  align-items: center;
 }
 .substrip__dot {
   display: inline-block;
@@ -181,7 +186,6 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
   border-radius: 50%;
   background: var(--gold-mark);
   margin-right: 8px;
-  vertical-align: middle;
   box-shadow: 0 0 0 3px rgba(200,168,106,.18);
 }
 
