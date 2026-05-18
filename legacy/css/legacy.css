@@ -82,7 +82,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    ------------------------------------------------------------ */
 .header {
   position: fixed;
-  top: 2px; left: 0; right: 0;
+  top: 14px; left: 0; right: 0;
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -161,7 +161,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 /* Sub-strip */
 .substrip {
   position: fixed;
-  top: 52px; left: 0; right: 0;
+  top: 64px; left: 0; right: 0;
   z-index: 999;
   display: flex;
   justify-content: space-between;
@@ -189,7 +189,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
   box-shadow: 0 0 0 3px rgba(200,168,106,.18);
 }
 
-main { padding-top: 86px; }
+main { padding-top: 98px; }
 
 /* Hero
    ------------------------------------------------------------ */
@@ -1232,7 +1232,7 @@ main { padding-top: 86px; }
   }
   .header__back { display: none; }
   .substrip { padding: 6px 20px; font-size: 9px; letter-spacing: .12em; }
-  main { padding-top: 70px; }
+  main { padding-top: 82px; }
 
   .hero { padding: 56px 20px 64px; }
   .hero__title { font-size: 32px; }
