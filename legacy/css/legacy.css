@@ -89,7 +89,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
   z-index: 1000;
 }
 .header__brand {
-  display: flex; align-items: baseline; gap: 12px;
+  display: flex; align-items: center; gap: 12px;
   color: #fff;
 }
 .header__brand img {
