@@ -233,6 +233,7 @@ main { padding-top: 86px; }
   letter-spacing: -0.012em;
   color: var(--ink);
   margin-bottom: 28px;
+  word-break: keep-all;
 }
 .hero__title-br { display: block; }
 .hero__title-accent {
@@ -385,8 +386,12 @@ main { padding-top: 86px; }
   line-height: 1.2;
   letter-spacing: -0.01em;
   color: var(--ink);
+  word-break: keep-all;
 }
-.section__title-accent { color: var(--gold); }
+.section__title-accent {
+  display: block;
+  color: var(--gold);
+}
 .section__sub {
   font-size: 15px;
   line-height: 1.85;
