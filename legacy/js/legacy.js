@@ -1,169 +1,99 @@
-/**
- * BioSkill-Legacy - Main JavaScript
- */
-(function () {
+/* ============================================================
+   BioSkill-Legacy — Interactions
+   ============================================================ */
+(() => {
   'use strict';
 
-  // DOM Elements
-  const header = document.querySelector('.header');
+  /* Scroll progress bar */
+  const progressEl = document.getElementById('scrollProgress');
+  if (progressEl) {
+    const updateProgress = () => {
+      const h = document.documentElement;
+      const scrolled = h.scrollTop;
+      const max = h.scrollHeight - h.clientHeight;
+      const pct = max > 0 ? (scrolled / max) * 100 : 0;
+      progressEl.style.width = pct + '%';
+    };
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+  }
+
+  /* Mobile menu */
   const menuBtn = document.querySelector('.header__menu-btn');
   const nav = document.querySelector('.header__nav');
-  const navLinks = document.querySelectorAll('.header__nav-list a');
-  const fadeElements = document.querySelectorAll('.fade-in');
-  const scrollProgress = document.getElementById('scrollProgress');
-
-  // Create overlay element
   const overlay = document.createElement('div');
-  overlay.className = 'overlay';
+  overlay.className = 'header__overlay';
+  Object.assign(overlay.style, {
+    position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.5)',
+    zIndex: 998, opacity: 0, visibility: 'hidden',
+    transition: 'opacity .3s, visibility .3s'
+  });
   document.body.appendChild(overlay);
 
-  /**
-   * Header scroll effect
-   */
-  function handleScroll() {
-    if (window.scrollY > 50) {
-      header.classList.add('is-scrolled');
-    } else {
-      header.classList.remove('is-scrolled');
-    }
-  }
-
-  /**
-   * Scroll progress bar
-   */
-  function updateScrollProgress() {
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-    scrollProgress.style.width = scrollPercent + '%';
-  }
-
-  /**
-   * Mobile menu toggle
-   */
-  function toggleMenu() {
-    menuBtn.classList.toggle('is-active');
-    nav.classList.toggle('is-open');
-    overlay.classList.toggle('is-visible');
-    document.body.style.overflow = nav.classList.contains('is-open') ? 'hidden' : '';
-  }
-
-  /**
-   * Close mobile menu
-   */
-  function closeMenu() {
+  const closeNav = () => {
+    if (!menuBtn || !nav) return;
     menuBtn.classList.remove('is-active');
     nav.classList.remove('is-open');
-    overlay.classList.remove('is-visible');
-    document.body.style.overflow = '';
+    overlay.style.opacity = '0';
+    overlay.style.visibility = 'hidden';
+  };
+  const openNav = () => {
+    if (!menuBtn || !nav) return;
+    menuBtn.classList.add('is-active');
+    nav.classList.add('is-open');
+    overlay.style.opacity = '1';
+    overlay.style.visibility = 'visible';
+  };
+
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.contains('is-active') ? closeNav() : openNav();
+    });
+    overlay.addEventListener('click', closeNav);
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
   }
 
-  /**
-   * Smooth scroll to section
-   */
-  function handleNavClick(e) {
-    const href = this.getAttribute('href');
-    if (href && href.startsWith('#')) {
-      e.preventDefault();
+  /* Smooth scroll for anchor links (offset for fixed header) */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const href = a.getAttribute('href');
+      if (!href || href === '#') return;
       const target = document.querySelector(href);
-      if (target) {
-        const headerHeight = header.offsetHeight + 10;
-        const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight;
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth'
-        });
-      }
-      closeMenu();
-    }
-  }
-
-  /**
-   * Intersection Observer for fade-in animations
-   */
-  function initFadeIn() {
-    const observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry, index) {
-        if (entry.isIntersecting) {
-          // Stagger animation
-          setTimeout(function () {
-            entry.target.classList.add('is-visible');
-          }, index * 100);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
+      if (!target) return;
+      e.preventDefault();
+      const offset = 90;
+      const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
     });
-
-    fadeElements.forEach(function (el) {
-      observer.observe(el);
-    });
-  }
-
-  /**
-   * Active nav link tracking
-   */
-  function updateActiveNav() {
-    const sections = document.querySelectorAll('section[id]');
-    const scrollPos = window.scrollY + header.offsetHeight + 100;
-
-    sections.forEach(function (section) {
-      const top = section.offsetTop;
-      const bottom = top + section.offsetHeight;
-      const id = section.getAttribute('id');
-
-      navLinks.forEach(function (link) {
-        if (link.getAttribute('href') === '#' + id) {
-          if (scrollPos >= top && scrollPos < bottom) {
-            link.classList.add('is-active');
-          } else {
-            link.classList.remove('is-active');
-          }
-        }
-      });
-    });
-  }
-
-  // Event Listeners
-  window.addEventListener('scroll', function () {
-    handleScroll();
-    updateScrollProgress();
-    updateActiveNav();
-  }, { passive: true });
-
-  if (menuBtn) {
-    menuBtn.addEventListener('click', toggleMenu);
-  }
-
-  overlay.addEventListener('click', closeMenu);
-
-  navLinks.forEach(function (link) {
-    link.addEventListener('click', handleNavClick);
   });
 
-  // Also handle footer nav links with smooth scroll
-  document.querySelectorAll('.footer__nav a[href^="#"]').forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      const href = this.getAttribute('href');
-      if (href && href.startsWith('#')) {
-        e.preventDefault();
-        const target = document.querySelector(href);
-        if (target) {
-          const headerHeight = header.offsetHeight + 10;
-          const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight;
-          window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
+  /* Fade-in via Intersection Observer */
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+
+  /* Active-section nav highlighting */
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.header__nav-list a');
+  if (sections.length && navLinks.length) {
+    const navIo = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          navLinks.forEach(l => {
+            const href = l.getAttribute('href');
+            l.classList.toggle('is-active', href === '#' + id);
           });
         }
-      }
-    });
-  });
-
-  // Initialize
-  handleScroll();
-  updateScrollProgress();
-  initFadeIn();
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    sections.forEach(s => navIo.observe(s));
+  }
 })();
