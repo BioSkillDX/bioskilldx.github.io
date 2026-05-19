@@ -34,6 +34,7 @@
     if (!menuBtn || !nav) return;
     menuBtn.classList.remove('is-active');
     nav.classList.remove('is-open');
+    menuBtn.setAttribute('aria-expanded', 'false');
     overlay.style.opacity = '0';
     overlay.style.visibility = 'hidden';
   };
@@ -41,6 +42,7 @@
     if (!menuBtn || !nav) return;
     menuBtn.classList.add('is-active');
     nav.classList.add('is-open');
+    menuBtn.setAttribute('aria-expanded', 'true');
     overlay.style.opacity = '1';
     overlay.style.visibility = 'visible';
   };
@@ -52,6 +54,16 @@
     overlay.addEventListener('click', closeNav);
     nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
   }
+
+  /* Team portrait fallback */
+  document.querySelectorAll('.team__portrait img[data-fallback]').forEach(img => {
+    img.addEventListener('error', () => {
+      const fallback = document.createElement('span');
+      fallback.className = 'team__portrait-fallback';
+      fallback.textContent = img.dataset.fallback || '';
+      img.replaceWith(fallback);
+    }, { once: true });
+  });
 
   /* Smooth scroll for anchor links (offset for fixed header) */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
@@ -67,22 +79,28 @@
     });
   });
 
-  /* Fade-in via Intersection Observer */
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+  const canObserve = 'IntersectionObserver' in window;
+  const fadeEls = document.querySelectorAll('.fade-in');
 
-  document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+  if (canObserve) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+
+    fadeEls.forEach(el => io.observe(el));
+  } else {
+    fadeEls.forEach(el => el.classList.add('is-visible'));
+  }
 
   /* Active-section nav highlighting */
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.header__nav-list a');
-  if (sections.length && navLinks.length) {
+  if (canObserve && sections.length && navLinks.length) {
     const navIo = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {

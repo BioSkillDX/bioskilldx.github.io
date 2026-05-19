@@ -26,7 +26,7 @@
   <link rel="manifest" href="../img/favicon/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;family=Noto+Serif+JP:wght@400;500&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/legacy.css">
   <script type="application/ld+json">
   {
@@ -57,10 +57,10 @@
         <span class="header__brand-sub">LEGACY</span>
       </a>
     </div>
-    <button class="header__menu-btn" aria-label="メニューを開く">
+    <button class="header__menu-btn" aria-label="メニューを開く" aria-controls="headerNav" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <nav class="header__nav">
+    <nav class="header__nav" id="headerNav">
       <ul class="header__nav-list">
         <li><a href="#problem"><span class="header__nav-num">01</span>Problem</a></li>
         <li><a href="#mission"><span class="header__nav-num">02</span>Mission</a></li>
@@ -782,19 +782,19 @@
       <div class="team__grid">
         <div class="team__card fade-in">
           <div class="team__card-ref">MEMBER · T-01</div>
-          <div class="team__portrait"><img src="../img/member/sasagawa-yohei.png" alt="笹川 洋平" onerror="this.outerHTML='<span class=\'team__portrait-fallback\'>笹</span>'"></div>
+          <div class="team__portrait"><img src="../img/member/sasagawa-yohei.png" alt="笹川 洋平" data-fallback="笹"></div>
           <div class="team__name">笹川 洋平</div>
           <div class="team__aff">東京科学大学</div>
         </div>
         <div class="team__card fade-in">
           <div class="team__card-ref">MEMBER · T-02</div>
-          <div class="team__portrait"><img src="../img/member/ohta-tazro.jpg" alt="大田 達郎" onerror="this.outerHTML='<span class=\'team__portrait-fallback\'>大</span>'"></div>
+          <div class="team__portrait"><img src="../img/member/ohta-tazro.jpg" alt="大田 達郎" data-fallback="大"></div>
           <div class="team__name">大田 達郎</div>
           <div class="team__aff">千葉大学</div>
         </div>
         <div class="team__card fade-in">
           <div class="team__card-ref">MEMBER · T-03</div>
-          <div class="team__portrait"><img src="../img/member/ono-hiromasa.jpg" alt="小野 浩雅" onerror="this.outerHTML='<span class=\'team__portrait-fallback\'>小</span>'"></div>
+          <div class="team__portrait"><img src="../img/member/ono-hiromasa.jpg" alt="小野 浩雅" data-fallback="小"></div>
           <div class="team__name">小野 浩雅</div>
           <div class="team__aff">プラチナバイオ株式会社</div>
         </div>
@@ -806,7 +806,7 @@
         </div>
         <div class="team__card fade-in">
           <div class="team__card-ref">MEMBER · T-05</div>
-          <div class="team__portrait"><img src="../img/member/fujie-manabu.jpg" alt="藤江 学" onerror="this.outerHTML='<span class=\'team__portrait-fallback\'>藤</span>'"></div>
+          <div class="team__portrait"><img src="../img/member/fujie-manabu.jpg" alt="藤江 学" data-fallback="藤"></div>
           <div class="team__name">藤江 学</div>
           <div class="team__aff">沖縄科学技術大学院大学</div>
         </div>

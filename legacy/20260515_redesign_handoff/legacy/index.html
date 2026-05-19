@@ -19,14 +19,14 @@
   <meta name="twitter:image" content="https://bioskilldx.github.io/img/1200_630.png">
   <title>BioSkill-Legacy - 熟練者の技を未来への遺産に</title>
   <link rel="canonical" href="https://bioskilldx.github.io/legacy/">
-  <link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico">
-  <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/svg+xml" href="../img/favicon/favicon.svg">
-  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
-  <link rel="manifest" href="../img/favicon/site.webmanifest">
+  <link rel="icon" type="image/x-icon" href="../../../img/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="96x96" href="../../../img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="../../../img/favicon/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="../../../img/favicon/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;family=Noto+Serif+JP:wght@400;500&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/legacy.css">
   <script type="application/ld+json">
   {
@@ -52,15 +52,15 @@
   <!-- Header -->
   <header class="header">
     <div class="header__brand">
-      <a href="../index.html" style="display:flex;align-items:baseline;gap:12px;">
+      <a href="../../../index.html" style="display:flex;align-items:baseline;gap:12px;">
         <img src="../img/logo.svg" alt="BioSkillDX">
         <span class="header__brand-sub">LEGACY</span>
       </a>
     </div>
-    <button class="header__menu-btn" aria-label="メニューを開く">
+    <button class="header__menu-btn" aria-label="メニューを開く" aria-controls="headerNav" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <nav class="header__nav">
+    <nav class="header__nav" id="headerNav">
       <ul class="header__nav-list">
         <li><a href="#problem"><span class="header__nav-num">01</span>Problem</a></li>
         <li><a href="#mission"><span class="header__nav-num">02</span>Mission</a></li>
@@ -71,7 +71,7 @@
         <li><a href="#team"><span class="header__nav-num">07</span>Team</a></li>
       </ul>
     </nav>
-    <a href="../index.html" class="header__back">
+    <a href="../../../index.html" class="header__back">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
       <span>BioSkillDX</span>
     </a>
@@ -788,19 +788,19 @@
       <div class="team__grid">
         <div class="team__card fade-in">
           <div class="team__card-ref">MEMBER · T-01</div>
-          <div class="team__portrait"><img src="../img/member/sasagawa-yohei.png" alt="笹川 洋平" onerror="this.outerHTML='<span class=\'team__portrait-fallback\'>笹</span>'"></div>
+          <div class="team__portrait"><img src="../../../img/member/sasagawa-yohei.png" alt="笹川 洋平" data-fallback="笹"></div>
           <div class="team__name">笹川 洋平</div>
           <div class="team__aff">東京科学大学</div>
         </div>
         <div class="team__card fade-in">
           <div class="team__card-ref">MEMBER · T-02</div>
-          <div class="team__portrait"><img src="../img/member/ohta-tazro.jpg" alt="大田 達郎" onerror="this.outerHTML='<span class=\'team__portrait-fallback\'>大</span>'"></div>
+          <div class="team__portrait"><img src="../../../img/member/ohta-tazro.jpg" alt="大田 達郎" data-fallback="大"></div>
           <div class="team__name">大田 達郎</div>
           <div class="team__aff">千葉大学</div>
         </div>
         <div class="team__card fade-in">
           <div class="team__card-ref">MEMBER · T-03</div>
-          <div class="team__portrait"><img src="../img/member/ono-hiromasa.jpg" alt="小野 浩雅" onerror="this.outerHTML='<span class=\'team__portrait-fallback\'>小</span>'"></div>
+          <div class="team__portrait"><img src="../../../img/member/ono-hiromasa.jpg" alt="小野 浩雅" data-fallback="小"></div>
           <div class="team__name">小野 浩雅</div>
           <div class="team__aff">プラチナバイオ株式会社</div>
         </div>
@@ -812,7 +812,7 @@
         </div>
         <div class="team__card fade-in">
           <div class="team__card-ref">MEMBER · T-05</div>
-          <div class="team__portrait"><img src="../img/member/fujie-manabu.jpg" alt="藤江 学" onerror="this.outerHTML='<span class=\'team__portrait-fallback\'>藤</span>'"></div>
+          <div class="team__portrait"><img src="../../../img/member/fujie-manabu.jpg" alt="藤江 学" data-fallback="藤"></div>
           <div class="team__name">藤江 学</div>
           <div class="team__aff">沖縄科学技術大学院大学</div>
         </div>
@@ -825,7 +825,7 @@
     <div class="footer__inner">
       <div>
         <div class="footer__brand">
-          <a href="../index.html" style="display:flex;align-items:baseline;gap:12px;">
+          <a href="../../../index.html" style="display:flex;align-items:baseline;gap:12px;">
             <img src="../img/logo.svg" alt="BioSkillDX">
             <span class="footer__brand-sub">LEGACY</span>
           </a>
@@ -851,7 +851,7 @@
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2mU52qhlUtysjfHWljK88Lg0uYSXrhqlgi0lYbDvRJ2mz6A/viewform" target="_blank" rel="noopener noreferrer">事例投稿フォーム（β）</a>
         <a href="https://www.youtube.com/@BioSkill-Legacy" target="_blank" rel="noopener noreferrer">YouTube Channel</a>
         <a href="https://github.com/BioSkillDX" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="../index.html">BioSkillDX トップ</a>
+        <a href="../../../index.html">BioSkillDX トップ</a>
         <a href="https://forms.gle/Hz3kwcN9M9HQGWse6" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
       </div>
     </div>
