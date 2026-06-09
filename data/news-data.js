@@ -27,7 +27,7 @@ var NEWS_DATA = {
         ],
         "en": [
           "The 98th Annual Meeting of the Japanese Tissue Culture Association (JTCA), chaired by BioSkillDX project member Kiyoshi Ohnuma (Nagaoka University of Technology), will be held over two days on August 27–28, 2026, at Hotel New Otani Nagaoka (Nagaoka, Niigata, Japan). The meeting's theme is \"Tissue Culture 5.0: Beyond Mechanization and AI.\"",
-          "The program features a range of sessions on mechanization, AI, and laboratory automation, including a joint symposium of the JTCA and the Laboratory Automation Association organized by BioSkillDX project member Genki Kanda (Institute of Science Tokyo) and colleagues.",
+          "The program features a range of sessions on mechanization, AI, and laboratory automation, including a joint symposium of the JTCA and the Laboratory Automation Suppliers' Association (LASA) organized by BioSkillDX project member Genki Kanda (Institute of Science Tokyo) and colleagues.",
           "Presentations are welcome on any topic related to cell and tissue culture — whether or not your work involves handling actual cells. The abstract submission deadline has been extended to June 12, 2026 (Fri), so we encourage you to apply.",
           "Advance registration is open until July 31, 2026. The venue, Hotel New Otani Nagaoka, is about 1 hour 40 minutes from Tokyo Station via the Joetsu Shinkansen and a 5-minute walk from Nagaoka Station."
         ]
