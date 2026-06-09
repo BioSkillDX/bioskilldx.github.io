@@ -1,6 +1,39 @@
 var NEWS_DATA = {
   "news": [
     {
+      "id": "7",
+      "date": "2026.06.09",
+      "category": {
+        "ja": "お知らせ",
+        "en": "Announcement"
+      },
+      "title": {
+        "ja": "BioSkillDXメンバーの大沼清氏が大会長を務める日本組織培養学会 第98回大会が長岡で開催されます",
+        "en": "The 98th Annual Meeting of the Japanese Tissue Culture Association, Chaired by BioSkillDX Member Kiyoshi Ohnuma, to Be Held in Nagaoka"
+      },
+      "link": {
+        "url": "https://jtca.umin.jp/meet/y2026/index.html",
+        "text": {
+          "ja": "詳細はこちら",
+          "en": "Learn more"
+        }
+      },
+      "content": {
+        "ja": [
+          "BioSkillDXプロジェクトメンバーの大沼清氏（長岡技術科学大学）が大会長を務める日本組織培養学会 第98回大会が、2026年8月27日（木）・28日（金）の2日間、ホテルニューオータニ長岡（新潟県長岡市）にて開催されます。大会テーマは「組織培養5.0：機械化・AI化の向こうがわ」です。",
+          "プログラムでは、BioSkillDXプロジェクトメンバーの神田元紀氏（東京科学大学）らがオーガナイザーを務める日本組織培養学会・ラボラトリーオートメーション協会のジョイントシンポジウムをはじめ、機械化・AI化（ラボオートメーション）をテーマとした多彩なセッションが予定されています。",
+          "細胞・組織培養に関連する内容であれば、実際に細胞を扱うかどうかにかかわらず発表を歓迎します。発表申込の締切は2026年6月12日（金）まで延長されていますので、ぜひお申し込みください。",
+          "事前参加登録は2026年7月31日（金）まで受け付けています。会場のホテルニューオータニ長岡へは、上越新幹線で東京駅から約1時間40分、長岡駅から徒歩5分です。"
+        ],
+        "en": [
+          "The 98th Annual Meeting of the Japanese Tissue Culture Association (JTCA), chaired by BioSkillDX project member Kiyoshi Ohnuma (Nagaoka University of Technology), will be held over two days on August 27–28, 2026, at Hotel New Otani Nagaoka (Nagaoka, Niigata, Japan). The meeting's theme is \"Tissue Culture 5.0: Beyond Mechanization and AI.\"",
+          "The program features a range of sessions on mechanization, AI, and laboratory automation, including a joint symposium of the JTCA and the Laboratory Automation Association organized by BioSkillDX project member Genki Kanda (Institute of Science Tokyo) and colleagues.",
+          "Presentations are welcome on any topic related to cell and tissue culture — whether or not your work involves handling actual cells. The abstract submission deadline has been extended to June 12, 2026 (Fri), so we encourage you to apply.",
+          "Advance registration is open until July 31, 2026. The venue, Hotel New Otani Nagaoka, is about 1 hour 40 minutes from Tokyo Station via the Joetsu Shinkansen and a 5-minute walk from Nagaoka Station."
+        ]
+      }
+    },
+    {
       "id": "5",
       "date": "2026.04.20",
       "category": {
