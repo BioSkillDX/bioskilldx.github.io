@@ -853,6 +853,17 @@ main { padding-top: 80px; }
   letter-spacing: 0.15em;
   color: #8c8170;
 }
+.action__cta-note {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+  padding: 16px 20px;
+  border-left: 3px solid var(--gold-mark);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 13px;
+  line-height: 1.85;
+  color: #cdbfa3;
+}
+.action__cta-note a { color: var(--gold-mark); text-decoration: underline; }
 
 .action__cats {
   max-width: var(--container);
