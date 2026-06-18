@@ -14,6 +14,7 @@ const translations = {
     nav_member: 'メンバー',
     nav_news: 'ニュース',
     nav_events: 'イベント',
+    nav_legacy: 'BioSkill-Legacy',
     nav_contact: 'お問い合わせ',
 
     // ===== KV Section =====
@@ -113,6 +114,7 @@ const translations = {
     footer_member: 'メンバー',
     footer_news: 'ニュース',
     footer_events: 'イベント',
+    footer_legacy: 'BioSkill-Legacy',
     footer_contact: 'お問い合わせ',
     footer_brand: 'ブランド素材',
     footer_link1: '外部サイト１',
@@ -146,6 +148,7 @@ const translations = {
     nav_member: 'Member',
     nav_news: 'News',
     nav_events: 'Events',
+    nav_legacy: 'BioSkill-Legacy',
     nav_contact: 'Contact',
 
     // ===== KV Section =====
@@ -245,6 +248,7 @@ const translations = {
     footer_member: 'Member',
     footer_news: 'News',
     footer_events: 'Events',
+    footer_legacy: 'BioSkill-Legacy',
     footer_contact: 'Contact',
     footer_brand: 'Brand Assets',
     footer_link1: 'External Site 1',
