@@ -1,6 +1,39 @@
 var NEWS_DATA = {
   "news": [
     {
+      "id": "9",
+      "date": "2026.06.19",
+      "category": {
+        "ja": "求人",
+        "en": "Recruitment"
+      },
+      "title": {
+        "ja": "沖縄科学技術大学院大学（OIST）にてBioSkillDXプロジェクトのシークエンシングスペシャリストを公募しています",
+        "en": "Okinawa Institute of Science and Technology (OIST) is hiring a Sequencing Specialist for the BioSkillDX project"
+      },
+      "link": {
+        "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126051468",
+        "text": {
+          "ja": "募集要項を見る（JREC-IN）",
+          "en": "View the job posting (JREC-IN)"
+        }
+      },
+      "content": {
+        "ja": [
+          "沖縄科学技術大学院大学（OIST）では、BioSkillDXプロジェクトを推進するため、シークエンシングスペシャリスト1名を公募しています。",
+          "主な業務はシークエンシング実験の実施、新規プロトコルの開発・最適化、実験記録の文章・映像・音声による体系的な作成、そして外部熟練者からのメタデータの取得・整理です。暗黙知の構造化と技能継承に直接関わるポジションです。",
+          "応募資格は、科学・技術分野における修士号以上（または同等の職務経験）、DNA/RNA抽出・PCR・クローニングなど分子生物学の基礎実験経験、日本語での円滑なコミュニケーション能力です。給与は年収300万〜800万円（経験・能力に応じて決定）。勤務地は沖縄県恩納村（OIST キャンパス）。",
+          "契約期間は2年間（試用期間6ヶ月を含む）で、プロジェクト期間終了（2030年7月31日）まで更新の可能性があります。応募締切は2026年11月30日必着です。"
+        ],
+        "en": [
+          "The Okinawa Institute of Science and Technology Graduate University (OIST) is recruiting a Sequencing Specialist to advance the BioSkillDX project.",
+          "Key responsibilities include conducting sequencing experiments, developing and optimizing new protocols, producing systematic experimental records in text, video, and audio formats, and acquiring and organizing metadata from external experts. This position is directly involved in the project's core mission of structuring tacit knowledge and enabling skill transfer.",
+          "Applicants should hold a master's degree or higher in a scientific or technical field (or equivalent work experience), have hands-on experience with molecular biology techniques such as DNA/RNA extraction, PCR, and cloning, and be able to communicate effectively in Japanese. The annual salary ranges from 3 to 8 million yen, commensurate with experience and qualifications. The position is based at the OIST campus in Onna Village, Okinawa.",
+          "This is a two-year appointment (including a six-month probationary period) with the possibility of renewal through the end of the project period (July 31, 2030). Applications must be received by November 30, 2026."
+        ]
+      }
+    },
+    {
       "id": "8",
       "date": "2026.06.19",
       "category": {
