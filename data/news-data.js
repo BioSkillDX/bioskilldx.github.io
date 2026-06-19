@@ -1,6 +1,39 @@
 var NEWS_DATA = {
   "news": [
     {
+      "id": "8",
+      "date": "2026.06.19",
+      "category": {
+        "ja": "求人",
+        "en": "Recruitment"
+      },
+      "title": {
+        "ja": "東京科学大学にてBioSkillDXプロジェクトの研究員・技術支援員を公募しています",
+        "en": "Now Hiring: Researcher / Technical Staff for the BioSkillDX Project at Institute of Science Tokyo"
+      },
+      "link": {
+        "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126060011",
+        "text": {
+          "ja": "募集要項を見る（JREC-IN）",
+          "en": "View the job posting (JREC-IN)"
+        }
+      },
+      "content": {
+        "ja": [
+          "東京科学大学 総合研究院 難治疾患研究所 ゲノム機能情報分野では、BioSkillDXプロジェクト「ライフサイエンス実験作業の暗黙知獲得と作業支援」（科学技術振興機構〈JST〉 経済安全保障重要技術育成プログラム／K Program）を推進するため、研究員および技術支援員（いずれも有期雇用職員）を若干名公募しています。",
+          "主な業務は、生命科学実験の実施と開発、実験技術の導入・最適化、実験記録（文章・動画）の作成、実験技術交流イベントのサポートです。BioSkillDXが取り組む暗黙知の構造化と技能継承に直接関わるポジションです。",
+          "研究員は博士号取得者または同等の研究経験を持つ方、技術支援員は修士号取得者または同等の知識・経験を持ち、実験の品質・再現性・効率の向上に意欲のある方を歓迎します。勤務地は湯島キャンパス（東京都文京区）、任期は採用日から2027年3月31日まで（単年度更新）です。",
+          "募集期間は2026年6月1日から8月1日必着（適任者が決まり次第締め切り）です。応募方法・必要書類など詳細はJREC-INの募集要項をご確認ください。"
+        ],
+        "en": [
+          "The Department of Functional Genome Informatics, Medical Research Laboratory, Institute of Science Tokyo, is recruiting a Researcher and a Technical Staff member (both fixed-term positions; a few openings) to advance the BioSkillDX project, \"Acquisition of Tacit Knowledge in Life-Science Experiments and Operational Support,\" supported by the JST K Program.",
+          "Responsibilities include conducting and developing life-science experiments, introducing and optimizing experimental techniques, recording experiments in text and video, and supporting technical-exchange events. These positions are directly engaged in structuring tacit knowledge and transferring expertise — core aims of BioSkillDX.",
+          "The Researcher position seeks candidates with a doctoral degree or equivalent research experience; the Technical Staff position seeks candidates with a master's degree or equivalent knowledge and experience who are motivated to improve the quality, reproducibility, and efficiency of experiments. The workplace is the Yushima Campus (Bunkyo-ku, Tokyo), and the term runs from the date of appointment through March 31, 2027 (renewable annually).",
+          "Applications are accepted from June 1 to August 1, 2026 (must arrive by the deadline; the call closes once a suitable candidate is found). Please see the JREC-IN posting for application procedures and required documents."
+        ]
+      }
+    },
+    {
       "id": "7",
       "date": "2026.06.09",
       "category": {
