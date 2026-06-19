@@ -26,10 +26,11 @@ var NEWS_DATA = {
           "契約期間は2年間（試用期間6ヶ月を含む）で、プロジェクト期間終了（2030年7月31日）まで更新の可能性があります。応募締切は2026年11月30日必着です。"
         ],
         "en": [
-          "The Okinawa Institute of Science and Technology Graduate University (OIST) is recruiting a Sequencing Specialist to advance the BioSkillDX project.",
-          "Key responsibilities include conducting sequencing experiments, developing and optimizing new protocols, producing systematic experimental records in text, video, and audio formats, and acquiring and organizing metadata from external experts. This position is directly involved in the project's core mission of structuring tacit knowledge and enabling skill transfer.",
-          "Applicants should hold a master's degree or higher in a scientific or technical field (or equivalent work experience), have hands-on experience with molecular biology techniques such as DNA/RNA extraction, PCR, and cloning, and be able to communicate effectively in Japanese. The annual salary ranges from 3 to 8 million yen, commensurate with experience and qualifications. The position is based at the OIST campus in Onna Village, Okinawa.",
-          "This is a two-year appointment (including a six-month probationary period) with the possibility of renewal through the end of the project period (July 31, 2030). Applications must be received by November 30, 2026."
+          "The Okinawa Institute of Science and Technology (OIST) is looking for a Sequencing Specialist to join our BioSkillDX project. We are seeking one individual to help us drive this initiative forward.",
+          "Your main responsibilities will involve conducting sequencing experiments and developing or optimizing new protocols. You will also play a key role in capturing and structuring tacit knowledge to support skill transfer by creating systematic records through text, video, and audio, as well as gathering metadata from experts in the field.",
+          "To be considered for this position, you should hold a Master's degree or higher in a scientific or technical field, or have equivalent professional experience. You should also be comfortable with basic molecular biology techniques like DNA and RNA extraction, PCR, and cloning. Since this role requires close collaboration, a high level of fluency in Japanese is essential.",
+          "The annual salary ranges from 3 to 8 million yen depending on your experience and skills. You will be based at our campus in Onna Village, Okinawa.",
+          "This is a two-year contract that includes a six-month probationary period, with the possibility of renewal until the project ends on July 31, 2030. Please ensure your application arrives no later than November 30, 2026."
         ]
       }
     },
