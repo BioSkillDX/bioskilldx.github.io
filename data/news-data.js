@@ -26,7 +26,7 @@ var NEWS_DATA = {
           "募集期間は2026年6月1日から8月1日必着（適任者が決まり次第締め切り）です。応募方法・必要書類など詳細はJREC-INの募集要項をご確認ください。"
         ],
         "en": [
-          "The Laboratory of Genome Function and Information at the Medical Research Institute is looking for several new team members to join the BioSkillDX project. This initiative, titled \"Acquisition of Tacit Knowledge in Life Science Experimental Procedures and Work Support,\" is supported by the JST Economic Security Research and Development Program.",
+          "The Department of Functional Genome Informatics at the Medical Research Laboratory is looking for several new team members to join the BioSkillDX project. This initiative, titled \"Acquisition of Tacit Knowledge in Life Science Experimental Procedures and Work Support,\" is supported by the JST K Program.",
           "In these roles, you will contribute directly to the project's mission of structuring tacit knowledge and passing on vital laboratory skills. Your daily work will involve conducting and developing life science experiments, refining laboratory techniques, documenting procedures through text and video, and helping organize events for technical exchange.",
           "We welcome applicants who are eager to improve the quality, reproducibility, and efficiency of scientific research. For the researcher positions, we are seeking individuals with a doctoral degree or equivalent research experience. For the technical support positions, we invite those with a master's degree or equivalent experience to apply.",
           "The positions are based at our Yushima Campus in Bunkyo-ku, Tokyo. These are fixed-term appointments starting from the date of hire and lasting until March 31, 2027, with the possibility of annual renewal.",
