@@ -409,7 +409,7 @@
       const html = latestNews.map((item, index) => {
         return `
           <article class="news-top__item fade-in">
-            <a href="news-detail.html?id=${item.id}" class="news-top__link">
+            <a href="news/${item.id}.html" class="news-top__link">
               <div class="news-top__meta">
                 <time class="news-top__date">${item.date}</time>
                 <span class="news-top__category">${item.category[currentLang]}</span>
@@ -455,7 +455,7 @@
       const html = latestEvents.map((item, index) => {
         return `
           <article class="events-top__card fade-in">
-            <a href="events-detail.html?id=${item.id}" class="events-top__card-link">
+            <a href="events/${item.id}.html" class="events-top__card-link">
               <div class="events-top__card-header">
                 <time class="events-top__card-date">${item.date}</time>
                 <span class="events-top__card-category">${item.category[currentLang]}</span>

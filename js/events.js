@@ -18,10 +18,17 @@
   const articleTitle = document.getElementById('article-title');
   const articleContent = document.getElementById('article-content');
   const eventInfo = document.getElementById('event-info');
+  const staticDetailContents = document.querySelectorAll('[data-content-lang]');
 
   // Detect page type
   const isListPage = !!eventsList;
   const isDetailPage = !!articleContent;
+
+  function switchStaticDetail(lang) {
+    staticDetailContents.forEach((element) => {
+      element.hidden = element.dataset.contentLang !== lang;
+    });
+  }
 
   // Create overlay element
   const overlay = document.createElement('div');
@@ -29,7 +36,7 @@
   document.body.appendChild(overlay);
 
   // Current language
-  let currentLang = localStorage.getItem('language') || 'ja';
+  let currentLang = localStorage.getItem('language') === 'en' ? 'en' : 'ja';
 
   /**
    * Header scroll effect
@@ -124,7 +131,7 @@
 
     const html = events.map((item, index) => `
       <article class="events-page__item fade-in" style="animation-delay: ${index * 0.1}s">
-        <a href="events-detail.html?id=${item.id}" class="events-page__link">
+        <a href="events/${item.id}.html" class="events-page__link">
           <div class="events-page__content">
             <div class="events-page__meta">
               <time class="events-page__date">${item.date}</time>
@@ -318,6 +325,7 @@
       });
 
       document.documentElement.lang = lang;
+      switchStaticDetail(lang);
 
       // Reload content with new language
       loadContent();
@@ -356,6 +364,7 @@
       });
     }
     document.documentElement.lang = currentLang;
+    switchStaticDetail(currentLang);
   }
 
   /**
