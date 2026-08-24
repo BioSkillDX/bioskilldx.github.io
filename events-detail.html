@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex">
   <title>Events | BioSkillDX</title>
   <script>
+    // Legacy URL shim: forward ?id= URLs to the static pages so search
+    // engines treat this as a redirect and consolidate signals there.
     const id = new URLSearchParams(window.location.search).get('id');
     const destination = ['1', '2', '3', '4', '5'].includes(id)
       ? `events/${id}.html`
       : 'events.html';
+    const canonical = document.createElement('link');
+    canonical.rel = 'canonical';
+    canonical.href = new URL(destination, window.location.href).href;
+    document.head.appendChild(canonical);
     window.location.replace(destination);
   </script>
 </head>
