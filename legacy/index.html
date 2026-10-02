@@ -26,7 +26,8 @@
   <link rel="manifest" href="../img/favicon/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;family=Noto+Serif+JP:wght@400;500&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Shippori+Mincho:wght@500;600&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#14110d">
   <link rel="stylesheet" href="css/legacy.css">
   <script type="application/ld+json">
   {
@@ -46,819 +47,729 @@
 </head>
 
 <body>
-  <!-- Scroll Progress Bar -->
-  <div class="scroll-progress" id="scrollProgress"></div>
+<div class="bsl" style="background: #f7f5ef; color: #14110d; font-family: 'Zen Kaku Gothic New', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', sans-serif; font-weight: 500; font-size: 16px; line-height: 1.85">
 
-  <!-- Header -->
-  <header class="header">
-    <div class="header__brand">
-      <a href="https://bioskilldx.github.io/legacy/" style="display:flex;align-items:center;gap:12px;">
-        <img src="../img/logo.svg" alt="BioSkillDX">
-        <span class="header__brand-sub">LEGACY</span>
-      </a>
-    </div>
-    <button class="header__menu-btn" aria-label="メニューを開く" aria-controls="headerNav" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="header__nav" id="headerNav">
-      <ul class="header__nav-list">
-        <li><a href="#problem"><span class="header__nav-num">01</span>Problem</a></li>
-        <li><a href="#mission"><span class="header__nav-num">02</span>Mission</a></li>
-        <li><a href="#pillars"><span class="header__nav-num">03</span>Pillars</a></li>
-        <li><a href="#structure"><span class="header__nav-num">04</span>Structure</a></li>
-        <li><a href="#benefits"><span class="header__nav-num">05</span>Why Join</a></li>
-        <li><a href="#action"><span class="header__nav-num">06</span>Join</a></li>
-        <li><a href="#team"><span class="header__nav-num">07</span>Team</a></li>
-      </ul>
-    </nav>
-    <a href="../index.html" class="header__back">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-      <span>BioSkillDX</span>
-    </a>
-  </header>
+<a class="skip" href="#top">本文へ移動</a>
+<header class="hd">
+<div class="wrap hd-in">
+<a href="#top" class="brand" aria-label="BioSkill-Legacy トップへ">
+<svg viewBox="0 0 228.03 35.54" width="116" height="18" fill="currentColor" aria-hidden="true"><path d="M0,3.51h14.48c5.86,0,10.24,2.57,10.24,7.98,0,3.97-2.03,6.18-5.55,7.35v.09c4.19.86,6.36,3.11,6.36,6.95,0,7.53-6.63,9.11-12.27,9.11H0V3.51ZM8.39,15.96h2.35c2.75,0,5.59-.68,5.59-3.34,0-2.89-2.71-3.16-5.5-3.16h-2.44v6.49ZM8.39,29.04h2.48c3.07,0,6.27-.45,6.27-3.65,0-3.43-3.29-3.74-6.18-3.74h-2.57v7.4Z"></path><rect x="29.05" y="3.36" width="8.12" height="5.95"></rect><rect x="29.05" y="11.5" width="8.12" height="23.5"></rect><path d="M40.23,23.27c0-7.8,5.91-12.31,13.67-12.31s13.67,4.51,13.67,12.31-5.91,12.27-13.67,12.27-13.67-4.51-13.67-12.27ZM59.18,23.27c0-3.52-1.53-6.63-5.28-6.63s-5.28,3.11-5.28,6.63,1.53,6.59,5.28,6.59,5.28-3.11,5.28-6.59Z"></path><path d="M70.18,27.24c2.17,1.17,5.19,2.08,8.66,2.08,2.66,0,5.19-.54,5.19-3.07,0-5.86-14.89-2.17-14.89-13.62,0-7.58,7.4-9.65,13.71-9.65,3.02,0,6,.45,8.12,1.17l-.54,6.5c-2.17-.99-4.6-1.44-6.99-1.44-2.12,0-5.64.18-5.64,2.93,0,5.1,14.89,1.67,14.89,13.04,0,8.16-6.86,10.37-13.85,10.37-2.93,0-6.59-.45-9.38-1.35l.72-6.95Z"></path><path d="M95.44,3.43h8.12v17.94h.09l6.77-9.88h8.89l-8.16,10.78,8.84,12.72h-9.83l-6.5-11.64h-.09v11.64h-8.12V3.43Z"></path><rect x="122.14" y="3.36" width="8.12" height="5.95"></rect><rect x="122.14" y="11.5" width="8.12" height="23.5"></rect><path d="M135.41,3.43h8.12v31.56h-8.12V3.43Z"></path><path d="M148.67,3.43h8.12v31.56h-8.12V3.43Z"></path><path d="M162.66,0h12.72c12.17,0,20.69,3.81,20.69,17.33s-8.76,17.63-20.69,17.63h-12.72V0ZM171.98,28.05h3.61c6.96,0,10.87-3.61,10.87-10.57s-4.06-10.57-10.87-10.57h-3.61v21.14Z"></path><path d="M204.18,16.58L194.07,0h10.87l5.86,11.52,6.01-11.52h10.22l-10.22,16.58,11.22,18.38h-11.12l-6.76-12.87-6.71,12.87h-10.57l11.32-18.38Z"></path></svg>
+<span class="mono" style="color: #c8a86a; letter-spacing: 0.3em; font-size: 11px; padding-left: 12px; border-left: 1px solid #5c5142">LEGACY</span>
+</a>
+<nav class="nav" aria-label="セクション">
+<a href="#problem"><i>01</i>Problem</a>
+<a href="#mission"><i>02</i>Mission</a>
+<a href="#pillars"><i>03</i>Pillars</a>
+<a href="#structure"><i>04</i>Structure</a>
+<a href="#benefits"><i>05</i>Why Join</a>
+<a href="#action"><i>06</i>Join</a>
+<a href="#team"><i>07</i>Team</a>
+</nav>
+<a href="../index.html" class="back">
+<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>
+<span>BioSkillDX</span>
+</a>
+<a href="#post" class="hcta dn">
+<span>事例を投稿する</span>
+<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"></path></svg>
+</a>
+<details class="menu">
+<summary>
+<span class="mono" style="font-size: 11px; letter-spacing: 0.2em">MENU</span>
+<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8h18M3 16h18"></path></svg>
+</summary>
+<nav class="mnav" aria-label="セクション（モバイル）">
+<a href="#problem"><i>01</i>Problem</a>
+<a href="#mission"><i>02</i>Mission</a>
+<a href="#pillars"><i>03</i>Pillars</a>
+<a href="#structure"><i>04</i>Structure</a>
+<a href="#benefits"><i>05</i>Why Join</a>
+<a href="#action"><i>06</i>Join</a>
+<a href="#team"><i>07</i>Team</a>
+<a href="../index.html" style="color: #b8aa8e; font-size: 14px; border-bottom: 0">← BioSkillDX トップ</a>
+</nav>
+</details>
+</div>
+<div class="prog" aria-hidden="true"></div>
+</header>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero" id="hero">
-      <div class="hero__grid">
-        <div>
-          <div class="hero__eyebrow fade-in">
-            <span class="hero__eyebrow-mark"></span>
-            <span>PROJECT · BIOSKILL-LEGACY</span>
-          </div>
-          <h1 class="hero__title fade-in">
-            <span class="hero__title-br">熟練者の<span class="hero__title-accent">"技"</span>を、</span>
-            <span class="hero__title-br">未来の<span class="hero__title-accent">遺産</span>に変換する。</span>
-          </h1>
-          <p class="hero__desc fade-in">
-            生命科学実験の再現性を支えているのは、プロトコルに書かれない「現場の判断」です。BioSkill-Legacyは、その判断と勘所を体系的に収集・構造化し、教材・テンプレート・データセットとして次世代に引き渡します。
-          </p>
-          <div class="hero__actions fade-in">
-            <a href="#action" class="btn btn--primary">
-              <span>事例を投稿する</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-            </a>
-            <a href="#problem" class="btn btn--ghost">
-              <span>プロジェクトを見る</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-          </div>
-          <div class="hero__specs fade-in">
-            <div>
-              <div class="hero__spec-label">FOCUS</div>
-              <div class="hero__spec-value">Life Science<br>Wet-lab Protocols</div>
-            </div>
-            <div>
-              <div class="hero__spec-label">METHOD</div>
-              <div class="hero__spec-value">多視点撮影 +<br>聞き取り + 注釈</div>
-            </div>
-            <div>
-              <div class="hero__spec-label">OUTPUT</div>
-              <div class="hero__spec-value">項目集 / 教材 /<br>再利用データセット</div>
-            </div>
-          </div>
-        </div>
+<main id="top">
 
-        <div class="hero__schematic fade-in">
-          <span class="hero__schematic-corner tl"></span>
-          <span class="hero__schematic-corner tr"></span>
-          <span class="hero__schematic-corner bl"></span>
-          <span class="hero__schematic-corner br"></span>
-          <span class="hero__schematic-figref">FIG. 00</span>
-          <svg viewBox="0 0 460 460" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="hero-grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#ebe5d4" stroke-width=".6"/>
-              </pattern>
-            </defs>
-            <rect x="0" y="0" width="460" height="460" fill="url(#hero-grid)"/>
-            <line x1="40" y1="40" x2="40" y2="420" stroke="#14110d" stroke-width="1"/>
-            <line x1="40" y1="420" x2="420" y2="420" stroke="#14110d" stroke-width="1"/>
-            <text x="20" y="36" font-family="JetBrains Mono, monospace" font-size="9" fill="#7a6f5e" letter-spacing="1.5">QUALITY</text>
-            <text x="380" y="436" font-family="JetBrains Mono, monospace" font-size="9" fill="#7a6f5e" letter-spacing="1.5">TIME →</text>
-            <line x1="40" y1="320" x2="420" y2="340" stroke="#7a6f5e" stroke-width="1" stroke-dasharray="3,3"/>
-            <text x="430" y="344" font-family="JetBrains Mono, monospace" font-size="9" fill="#7a6f5e">∅</text>
-            <path d="M 40 320 C 140 320, 200 230, 250 180 S 380 80, 420 60" fill="none" stroke="#14110d" stroke-width="1.5"/>
-            <path d="M 40 320 C 140 320, 200 230, 250 180 S 380 80, 420 60 L 420 420 L 40 420 Z" fill="#c8a86a" opacity=".08"/>
-            <circle cx="120" cy="290" r="4" fill="#14110d"/>
-            <circle cx="200" cy="220" r="4" fill="#14110d"/>
-            <circle cx="280" cy="160" r="6" fill="#c8a86a" stroke="#14110d" stroke-width="1.5"/>
-            <circle cx="360" cy="100" r="4" fill="#14110d"/>
-            <g font-family="JetBrains Mono, monospace" font-size="9" fill="#3d362d" letter-spacing="0.5">
-              <line x1="120" y1="290" x2="120" y2="370" stroke="#7a6f5e" stroke-width=".6"/>
-              <text x="120" y="384" text-anchor="middle">T1·聞き取り</text>
-              <line x1="200" y1="220" x2="200" y2="370" stroke="#7a6f5e" stroke-width=".6"/>
-              <text x="200" y="384" text-anchor="middle">T2·撮影</text>
-              <line x1="280" y1="160" x2="280" y2="370" stroke="#c8a86a" stroke-width=".8"/>
-              <text x="280" y="384" text-anchor="middle" fill="#a88c52" font-weight="700">T3·構造化</text>
-              <line x1="360" y1="100" x2="360" y2="370" stroke="#7a6f5e" stroke-width=".6"/>
-              <text x="360" y="384" text-anchor="middle">T4·還元</text>
-            </g>
-            <g>
-              <line x1="286" y1="160" x2="370" y2="200" stroke="#a88c52" stroke-width=".8"/>
-              <rect x="294" y="204" width="148" height="34" fill="#ffffff" stroke="#a88c52" stroke-width=".8"/>
-              <text x="302" y="220" font-family="JetBrains Mono, monospace" font-size="9" fill="#a88c52" letter-spacing="1.5">CRITICAL POINT</text>
-              <text x="302" y="232" font-family="Lato, Noto Sans JP, sans-serif" font-size="10" font-weight="700" fill="#14110d">暗黙知が項目化される</text>
-            </g>
-            <text x="50" y="58" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.5" fill="#a88c52">SYSTEM-LEGACY · v0.1</text>
-            <text x="50" y="72" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.5" fill="#7a6f5e">熟練者の知見の累積モデル</text>
-          </svg>
-          <span class="hero__schematic-caption">CHART · 熟練者の知見の累積モデル / Conceptual</span>
-        </div>
-      </div>
-    </section>
+<section class="hero">
+<div class="wrap" style="padding-block: clamp(36px, 5.4cqi, 80px) clamp(48px, 6cqi, 88px)">
+<div class="mono rise" style="display: flex; justify-content: space-between; gap: 16px; color: #6f5a32; margin-bottom: clamp(18px, 2.4cqi, 32px)">
+<span>Project · BioSkill-Legacy</span>
+<span>JST K Program</span>
+</div>
+<h1 class="h1 rise" style="animation-delay: 0.08s">
+<span class="l">熟練者の<span class="mark">“技”</span>を、</span>
+<span class="l">未来の<span class="mark">遺産</span>に変換する。</span>
+</h1>
+<div style="display: flex; flex-wrap: wrap; gap: 40px clamp(40px, 6cqi, 96px); align-items: flex-start; margin-top: clamp(28px, 4cqi, 56px)">
+<div class="rise" style="flex: 1 1 400px; display: flex; flex-direction: column; gap: 28px; animation-delay: 0.18s">
+<p style="font-size: clamp(16px, 1.3cqi, 18px); line-height: 1.95; color: #3d362d; max-width: 34em">生命科学実験の再現性を支えているのは、プロトコルに書かれない「現場の判断」です。<span class="nw">BioSkill-Legacy</span>は、その判断と勘所を体系的に収集・構造化し、教材・テンプレート・データセットとして次世代に引き渡します。</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; max-width: 540px">
+<a href="#post" class="btn btn-p dn" style="flex: 1 1 230px">
+<span>事例を投稿する</span>
+<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"></path></svg>
+</a>
+<a href="#problem" class="btn btn-g" style="flex: 1 1 230px">
+<span>プロジェクトを見る</span>
+<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+</a>
+</div>
+<div class="mono" style="display: flex; flex-wrap: wrap; gap: 8px 16px; color: #6b6152; letter-spacing: 0.08em; text-transform: none; font-size: 12.5px">
+<span>所要 5 MIN</span><span>/</span><span>匿名可</span><span>/</span><span>現在は準備期間（β）</span>
+</div>
+</div>
+<figure class="sheet rise" style="flex: 1.15 1 340px; animation-delay: 0.3s">
+<span class="cm tl"></span><span class="cm tr"></span><span class="cm bl"></span><span class="cm br"></span>
+<div class="srow mono" style="padding-bottom: 10px; font-size: 11px">
+<span></span>
+<span style="color: #14110d">Protocol / 記載</span>
+<span style="color: #6f5a32; padding-left: 24px">Margin / 不記載</span>
+</div>
+<div class="srow">
+<span class="n mono">01</span>
+<span class="b"><span class="bar" style="width: 88%; animation-delay: 0.5s"></span><span class="bar b2" style="width: 54%; animation-delay: 0.56s"></span></span>
+<span class="m"></span>
+</div>
+<div class="srow">
+<span class="n mono">02</span>
+<span class="b"><span class="bar" style="width: 72%; animation-delay: 0.62s"></span><span class="bar b2" style="width: 80%; animation-delay: 0.68s"></span></span>
+<span class="m"><a href="#p-01" class="note min" style="animation-delay: 1.3s">「ここで止めるか、あと10秒続けるか」<span class="mono nref">P-01 ↓</span></a></span>
+</div>
+<div class="srow">
+<span class="n mono">03</span>
+<span class="b"><span class="bar" style="width: 94%; animation-delay: 0.74s"></span><span class="bar b2" style="width: 38%; animation-delay: 0.8s"></span></span>
+<span class="m"></span>
+</div>
+<div class="srow">
+<span class="n mono">04</span>
+<span class="b"><span class="bar" style="width: 64%; animation-delay: 0.86s"></span><span class="bar b2" style="width: 70%; animation-delay: 0.92s"></span></span>
+<span class="m"><a href="#p-02" class="note min" style="animation-delay: 1.75s">「今日のロットは少し薄めで」<span class="mono nref">P-02 ↓</span></a></span>
+</div>
+<div class="srow">
+<span class="n mono">05</span>
+<span class="b"><span class="bar" style="width: 82%; animation-delay: 0.98s"></span><span class="bar b2" style="width: 46%; animation-delay: 1.04s"></span></span>
+<span class="m"><a href="#p-03" class="note min" style="animation-delay: 2.2s">「この機種だけ少し短めに回す」<span class="mono nref">P-03 ↓</span></a></span>
+</div>
+<div class="srow">
+<span class="n mono">06</span>
+<span class="b"><span class="bar" style="width: 58%; animation-delay: 1.1s"></span><span class="bar b2" style="width: 28%; animation-delay: 1.16s"></span></span>
+<span class="m"></span>
+</div>
+<figcaption class="mono" style="display: flex; justify-content: space-between; gap: 12px; padding-top: 12px; border-top: 1px solid #14110d; font-size: 12px; color: #6b6152">
+<span>Fig. 00 · プロトコルの余白</span><span>Conceptual</span>
+</figcaption>
+</figure>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 20px 32px; margin-top: clamp(40px, 5cqi, 72px); padding-top: 20px; border-top: 1px solid #14110d">
+<div>
+<div class="mono" style="color: #6f5a32">Focus</div>
+<div style="font-size: 15px; font-weight: 700; line-height: 1.6; margin-top: 4px">Life Science<br>Wet-lab Protocols</div>
+</div>
+<div>
+<div class="mono" style="color: #6f5a32">Method</div>
+<div style="font-size: 15px; font-weight: 700; line-height: 1.6; margin-top: 4px">多視点撮影 +<br>聞き取り + 注釈</div>
+</div>
+<div>
+<div class="mono" style="color: #6f5a32">Output</div>
+<div style="font-size: 15px; font-weight: 700; line-height: 1.6; margin-top: 4px">項目集 / 教材 /<br>再利用データセット</div>
+</div>
+</div>
+</div>
+</section>
 
-    <!-- §01 Problem -->
-    <section class="section" id="problem">
-      <div class="section__head fade-in">
-        <div>
-          <div class="section__id">SECTION · 01 / PROBLEM</div>
-          <h2 class="section__title">プロトコルに、<span class="section__title-accent">書かれない知識。</span></h2>
-        </div>
-        <p class="section__sub">
-          同じ手順を辿っても、同じ結果は得られない。条件のわずかな違いが実験の成功率を決め、熟練者は試料の状態を見て判断する。<br><br>
-          この問題の多くは、実行に必要な情報がプロトコルに十分に含まれていないことに起因する。
-        </p>
-      </div>
+<section id="problem" style="background: #ffffff">
+<div class="wrap sec">
+<div class="shead">
+<div style="flex: 1.4 1 420px">
+<div class="sid mono">Section 01 / Problem</div>
+<h2 class="h2"><span class="l">プロトコルに、</span><span class="l"><span class="mark">書かれない知識。</span></span></h2>
+</div>
+<p class="ssub">同じ手順を辿っても、同じ結果は得られない。条件のわずかな違いが実験の成功率を決め、熟練者は試料の状態を見て判断する。<br>この問題の多くは、実行に必要な情報がプロトコルに十分に含まれていないことに起因する。</p>
+</div>
+<p style="font-size: clamp(17px, 1.75cqi, 24px); line-height: 1.9; max-width: 46em; margin-bottom: clamp(32px, 4cqi, 56px)">熟練者は<strong class="mark">「どこを見るか」「何を変えるべきか」</strong>を判断しながら進められるため成功率が高い。一方、初学者はその判断に必要な情報にアクセスしにくく、同じ手順を実行しても失敗しやすい。<span class="nw">BioSkill-Legacy</span>は、その<strong class="mark">空白</strong>を埋めることを目的としています。</p>
+<div class="grid3">
+<article class="card" id="p-01">
+<div class="mono" style="display: flex; justify-content: space-between; gap: 12px; color: #6b6152"><span>P-01</span><span style="color: #6f5a32">類型 I · Observation</span></div>
+<svg width="44" height="44" viewBox="0 0 40 40" fill="none" stroke="#14110d" stroke-width="1.3" aria-hidden="true"><path d="M4 20C10 10 30 10 36 20 30 30 10 30 4 20Z"></path><circle cx="20" cy="20" r="5"></circle><circle cx="20" cy="20" r="1.6" fill="#c8a86a" stroke="none"></circle></svg>
+<h3 style="font-size: 22px; font-weight: 900; line-height: 1.4">観察に基づく判断</h3>
+<p style="font-size: 15.5px; line-height: 1.85; color: #3d362d">サンプルの色・粘性・泡立ちなどを目で見て、次の工程の条件を分岐させる。目盛りには現れない判断。</p>
+<p class="eg min"><span class="mono" style="display: block; font-size: 11px; color: #6b6152; margin-bottom: 4px">e.g.</span>「ここで止めるか、あと10秒続けるか」</p>
+</article>
+<article class="card" id="p-02">
+<div class="mono" style="display: flex; justify-content: space-between; gap: 12px; color: #6b6152"><span>P-02</span><span style="color: #6f5a32">類型 II · Calibration</span></div>
+<svg width="44" height="44" viewBox="0 0 40 40" fill="none" stroke="#14110d" stroke-width="1.3" aria-hidden="true"><circle cx="20" cy="20" r="14"></circle><path d="M20 6v4M20 30v4M6 20h4M30 20h4M20 20l8-6"></path><circle cx="20" cy="20" r="2" fill="#c8a86a" stroke="none"></circle></svg>
+<h3 style="font-size: 22px; font-weight: 900; line-height: 1.4">経験則による調整</h3>
+<p style="font-size: 15.5px; line-height: 1.85; color: #3d362d">数値化されていないが、成功率を左右する微妙なチューニング。試薬ロット差、季節、湿度、その日の状態。</p>
+<p class="eg min"><span class="mono" style="display: block; font-size: 11px; color: #6b6152; margin-bottom: 4px">e.g.</span>「今日のロットは少し薄めで」</p>
+</article>
+<article class="card" id="p-03">
+<div class="mono" style="display: flex; justify-content: space-between; gap: 12px; color: #6b6152"><span>P-03</span><span style="color: #6f5a32">類型 III · Context</span></div>
+<svg width="44" height="44" viewBox="0 0 40 40" fill="none" stroke="#14110d" stroke-width="1.3" aria-hidden="true"><rect x="4" y="6" width="32" height="24"></rect><path d="M4 12h32M8 18h12M8 22h20M8 26h8"></path><path d="M24 30l4 4 8-8" stroke="#a88c52" stroke-width="1.8"></path></svg>
+<h3 style="font-size: 22px; font-weight: 900; line-height: 1.4">文脈依存の手技</h3>
+<p style="font-size: 15.5px; line-height: 1.85; color: #3d362d">環境・機器・試薬ロットに応じた、その場でしか判断できない微調整。プロトコルに書ききれない「現場の作法」。</p>
+<p class="eg min"><span class="mono" style="display: block; font-size: 11px; color: #6b6152; margin-bottom: 4px">e.g.</span>「この機種だけ少し短めに回す」</p>
+</article>
+</div>
+</div>
+</section>
 
-      <div class="problem__intro fade-in">
-        熟練者は<strong>「どこを見るか」「何を変えるべきか」</strong>を判断しながら進められるため成功率が高い。一方、初学者はその判断に必要な情報にアクセスしにくく、同じ手順を実行しても失敗しやすい。BioSkill-Legacyは、その<strong>空白</strong>を埋めることを目的としています。
-      </div>
+<section id="mission" class="dark" style="background: #14110d; color: #f7f5ef">
+<div class="wrap sec">
+<div class="shead">
+<div style="flex: 1.4 1 420px">
+<div class="sid mono">Section 02 / Mission</div>
+<h2 class="h2"><span class="l">暗黙知を、</span><span class="l" style="color: #c8a86a">遺産に変換する。</span></h2>
+</div>
+<p class="ssub"><span class="nw">BioSkill-Legacy</span>は、Data → Model → Operation の3段で動く。継続的に集め、整理し、次世代へ引き渡せる形式に変換し続ける。</p>
+</div>
+<p class="min" style="font-size: clamp(21px, 3.1cqi, 44px); line-height: 1.7; font-weight: 500; margin-bottom: clamp(40px, 5cqi, 72px); padding-left: clamp(16px, 2.4cqi, 36px); border-left: 1px solid #c8a86a">
+<span class="l dbr">熟練者が実際に使っている<strong style="color: #c8a86a; font-weight: 600">判断基準</strong>や、</span>
+<span class="l dbr">不記載になりやすい情報を<span style="border-bottom: 1px solid #c8a86a">継続的に集め、整理し</span>、</span>
+<span class="l dbr">次世代へ引き渡せる形式に変換する。</span>
+</p>
+<div class="flow">
+<article class="cell">
+<div class="mono" style="color: #c8a86a">M-01</div>
+<h3 style="font-size: clamp(34px, 3.6cqi, 52px); font-weight: 900; line-height: 1.1; letter-spacing: -0.02em">Data</h3>
+<div style="font-size: 14px; font-weight: 700; color: #c8a86a">収集 · 記録</div>
+<p style="font-size: 15.5px; line-height: 1.85; color: #d9d0bd">熟練者の現場で観察・聞き取り・多視点撮影を一体で実施。条件分岐の瞬間と、その判断根拠を捉える。</p>
+<div class="mono" style="margin-top: auto; padding-top: 14px; border-top: 1px solid #4a4033; color: #b8aa8e; font-size: 12px">Spec · Video + Audio + Protocol</div>
+</article>
+<div class="arr"><svg viewBox="0 0 40 16" width="40" height="16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 8h36M29 2l8 6-8 6"></path></svg></div>
+<article class="cell">
+<div class="mono" style="color: #c8a86a">M-02</div>
+<h3 style="font-size: clamp(34px, 3.6cqi, 52px); font-weight: 900; line-height: 1.1; letter-spacing: -0.02em">Model</h3>
+<div style="font-size: 14px; font-weight: 700; color: #c8a86a">構造化 · モデル化</div>
+<p style="font-size: 15.5px; line-height: 1.85; color: #d9d0bd">観察→判断→介入→結果のチェーンを取り出し、項目・根拠・分岐として再利用可能な形へ。</p>
+<div class="mono" style="margin-top: auto; padding-top: 14px; border-top: 1px solid #4a4033; color: #b8aa8e; font-size: 12px">Spec · Schema + Annotation</div>
+</article>
+<div class="arr"><svg viewBox="0 0 40 16" width="40" height="16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 8h36M29 2l8 6-8 6"></path></svg></div>
+<article class="cell">
+<div class="mono" style="color: #c8a86a">M-03</div>
+<h3 style="font-size: clamp(34px, 3.6cqi, 52px); font-weight: 900; line-height: 1.1; letter-spacing: -0.02em">Operation</h3>
+<div style="font-size: 14px; font-weight: 700; color: #c8a86a">活用 · 更新</div>
+<p style="font-size: 15.5px; line-height: 1.85; color: #d9d0bd">教材・テンプレートとして還元し、現場のフィードバックを受けて継続的に育てる。</p>
+<div class="mono" style="margin-top: auto; padding-top: 14px; border-top: 1px solid #4a4033; color: #b8aa8e; font-size: 12px">Spec · Template + Dataset</div>
+</article>
+</div>
+</div>
+</section>
 
-      <div class="problem__grid fade-in">
-        <div class="problem__card">
-          <div class="problem__card-ref">P-01</div>
-          <div class="problem__card-tag">類型 I · OBSERVATION</div>
-          <div class="problem__card-icon">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-              <path d="M4 20 C 10 10, 30 10, 36 20 C 30 30, 10 30, 4 20Z" stroke="currentColor" stroke-width="1.2"/>
-              <circle cx="20" cy="20" r="5" stroke="currentColor" stroke-width="1.2"/>
-              <circle cx="20" cy="20" r="1.5" fill="currentColor"/>
-            </svg>
-          </div>
-          <h3 class="problem__card-title">観察に基づく判断</h3>
-          <p class="problem__card-body">サンプルの色・粘性・泡立ちなどを目で見て、次の工程の条件を分岐させる。目盛りには現れない判断。</p>
-          <div class="problem__card-eg">e.g. "ここで止めるか、あと10秒続けるか"</div>
-        </div>
-        <div class="problem__card">
-          <div class="problem__card-ref">P-02</div>
-          <div class="problem__card-tag">類型 II · CALIBRATION</div>
-          <div class="problem__card-icon">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-              <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.2"/>
-              <line x1="20" y1="6" x2="20" y2="10" stroke="currentColor" stroke-width="1.2"/>
-              <line x1="20" y1="30" x2="20" y2="34" stroke="currentColor" stroke-width="1.2"/>
-              <line x1="6" y1="20" x2="10" y2="20" stroke="currentColor" stroke-width="1.2"/>
-              <line x1="30" y1="20" x2="34" y2="20" stroke="currentColor" stroke-width="1.2"/>
-              <line x1="20" y1="20" x2="28" y2="14" stroke="#14110d" stroke-width="1.4"/>
-              <circle cx="20" cy="20" r="2" fill="currentColor"/>
-            </svg>
-          </div>
-          <h3 class="problem__card-title">経験則による調整</h3>
-          <p class="problem__card-body">数値化されていないが、成功率を左右する微妙なチューニング。試薬ロット差、季節、湿度、その日の状態。</p>
-          <div class="problem__card-eg">e.g. "今日のロットは少し薄めで"</div>
-        </div>
-        <div class="problem__card">
-          <div class="problem__card-ref">P-03</div>
-          <div class="problem__card-tag">類型 III · CONTEXT</div>
-          <div class="problem__card-icon">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-              <rect x="4" y="6" width="32" height="24" stroke="currentColor" stroke-width="1.2"/>
-              <line x1="4" y1="12" x2="36" y2="12" stroke="currentColor" stroke-width="1.2"/>
-              <circle cx="10" cy="9" r="1" fill="currentColor"/>
-              <circle cx="14" cy="9" r="1" fill="currentColor"/>
-              <line x1="8" y1="18" x2="20" y2="18" stroke="#14110d" stroke-width="1"/>
-              <line x1="8" y1="22" x2="28" y2="22" stroke="#14110d" stroke-width="1"/>
-              <line x1="8" y1="26" x2="16" y2="26" stroke="#14110d" stroke-width="1"/>
-              <path d="M 24 30 L 28 34 L 36 26" stroke="currentColor" stroke-width="1.4" fill="none"/>
-            </svg>
-          </div>
-          <h3 class="problem__card-title">文脈依存の手技</h3>
-          <p class="problem__card-body">環境・機器・試薬ロットに応じた、その場でしか判断できない微調整。プロトコルに書ききれない「現場の作法」。</p>
-          <div class="problem__card-eg">e.g. "この機種だけ少し短めに回す"</div>
-        </div>
-      </div>
-    </section>
+<section id="pillars">
+<div class="wrap sec">
+<div class="shead">
+<div style="flex: 1.4 1 420px">
+<div class="sid mono">Section 03 / Two Pillars</div>
+<h2 class="h2"><span class="l">二つの柱。</span><span class="l"><span class="mark">何をするか。</span></span></h2>
+</div>
+<p class="ssub">(A) “書くべきこと”の確立 — プロトコルに含まれるべき項目を体系として固める。<br>(B) 判断プロセスの記録とモデル化 — 熟練者の判断を観察可能な単位で記録する。</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 24px">
+<article class="pillar">
+<span class="pl" aria-hidden="true">A</span>
+<div style="position: relative; display: flex; flex-direction: column; gap: 14px">
+<div class="mono" style="color: #6f5a32">Pillar 01 · Focus — What / Why</div>
+<h3 style="font-size: clamp(24px, 2.6cqi, 34px); font-weight: 900; line-height: 1.35; max-width: 12em">“<span class="mark">書くべきこと</span>”の確立</h3>
+<p style="font-size: 15.5px; line-height: 1.85; color: #3d362d; max-width: 30em; margin-bottom: 10px">プロトコルに「書かれるべき項目」と「根拠」を体系として確立する。スタイルではなく、内容にフォーカスする。</p>
+<div>
+<div class="pitem"><span class="mono" style="color: #6f5a32; padding-top: 4px">A-01</span><span>実験プロトコルに含めるべき記載項目の定義</span></div>
+<div class="pitem"><span class="mono" style="color: #6f5a32; padding-top: 4px">A-02</span><span>なぜそれが必要か — 根拠と条件分岐の体系化</span></div>
+<div class="pitem"><span class="mono" style="color: #6f5a32; padding-top: 4px">A-03</span><span>LLM等による整形・テンプレート化は項目確定後に加速</span></div>
+<div class="pitem" style="border-bottom: 1px solid #d8d1bf"><span class="mono" style="color: #6f5a32; padding-top: 4px">A-04</span><span>ドメインを跨いで利用可能な共通の語彙の整備</span></div>
+</div>
+</div>
+</article>
+<article class="pillar">
+<span class="pl" aria-hidden="true">B</span>
+<div style="position: relative; display: flex; flex-direction: column; gap: 14px">
+<div class="mono" style="color: #6f5a32">Pillar 02 · Focus — Decision Chain</div>
+<h3 style="font-size: clamp(24px, 2.6cqi, 34px); font-weight: 900; line-height: 1.35; max-width: 12em">判断プロセスの<span class="mark">記録</span>とモデル化</h3>
+<p style="font-size: 15.5px; line-height: 1.85; color: #3d362d; max-width: 30em; margin-bottom: 10px">熟練者の判断（メンタルモデル）を、観察可能な単位で記録し、将来のワールドモデル構築へ接続する。</p>
+<div>
+<div class="pitem"><span class="mono" style="color: #6f5a32; padding-top: 4px">B-01</span><span>観察 → 判断 → 介入 → 結果 のチェーンを記録</span></div>
+<div class="pitem"><span class="mono" style="color: #6f5a32; padding-top: 4px">B-02</span><span>操作対象物の状態変化に着目（手の動きだけでなく）</span></div>
+<div class="pitem"><span class="mono" style="color: #6f5a32; padding-top: 4px">B-03</span><span>アフォーダンスに基づく記録単位の設計</span></div>
+<div class="pitem" style="border-bottom: 1px solid #d8d1bf"><span class="mono" style="color: #6f5a32; padding-top: 4px">B-04</span><span>将来的なワールドモデル構築への接続</span></div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
 
-    <!-- §02 Mission -->
-    <section class="section section--alt" id="mission">
-      <div class="section__head fade-in">
-        <div>
-          <div class="section__id">SECTION · 02 / MISSION</div>
-          <h2 class="section__title">暗黙知を、<span class="section__title-accent">遺産に変換する。</span></h2>
-        </div>
-        <p class="section__sub">
-          BioSkill-Legacyは、Data → Model → Operation の3段で動く。継続的に集め、整理し、次世代へ引き渡せる形式に変換し続ける。
-        </p>
-      </div>
+<section class="chain dark" aria-labelledby="chain-h">
+<div class="wrap sec">
+<div class="shead">
+<div style="flex: 1.4 1 420px">
+<div class="sid mono">Fig. B-01 / Decision Chain</div>
+<h2 class="h2" id="chain-h"><span class="l">観察 → 判断 →</span><span class="l" style="color: #c8a86a">介入 → 結果</span></h2>
+</div>
+<p class="ssub">俯瞰・側面・対象クローズアップ・プロトコル画面・音声を同時取得し、条件分岐の瞬間と、その判断根拠を捉える。</p>
+</div>
+<figure class="rec" data-s="1" style="margin: 0">
+<span class="cm tl"></span><span class="cm tr"></span><span class="cm bl"></span><span class="cm br"></span>
+<div class="rhead mono"><span>Multi-view record<span class="rh2"> · 1 decision</span></span><span>Conceptual</span></div>
+<div class="rgrid">
+<div class="rlabels" aria-hidden="true">
+<div class="rlab r-ov"><b>CAM-1</b><span>俯瞰</span></div>
+<div class="rlab r-sd"><b>CAM-2</b><span>側面</span></div>
+<div class="rlab r-cl"><b>CAM-3</b><span>対象クローズアップ</span></div>
+<div class="rlab r-sc"><b>SCREEN</b><span>プロトコル画面</span></div>
+<div class="rlab r-mc"><b>MIC</b><span>音声</span></div>
+</div>
+<div class="tz" aria-hidden="true">
+<div class="trk tv1 r-ov"></div>
+<div class="trk tv2 r-sd"></div>
+<div class="trk tv3 r-cl"></div>
+<div class="trk tps r-sc"><span class="" style="width: 24%">01</span><span class="p2" style="width: 28%">02</span><span class="" style="width: 14%">03</span><span class="" style="width: 12%">04</span><span class="" style="width: 14%">05</span><span class="" style="width: 8%">06</span></div>
+<div class="trk tmc r-mc"><svg viewBox="0 0 400 20" preserveAspectRatio="none" aria-hidden="true"><path d="M1.1 8.9v2.2M4.4 8.5v3.0M7.8 8.4v3.3M11.1 9.1v1.9M14.4 9.1v1.7M17.8 9.3v1.5M21.1 8.1v3.8M24.4 9.1v1.8M27.8 7.6v4.9M31.1 8.3v3.5M34.4 8.1v3.7M37.8 8.0v4.1M41.1 9.2v1.7M44.4 8.4v3.3M47.8 8.8v2.4M51.1 8.2v3.6M54.4 8.7v2.7M57.8 9.2v1.6M61.1 8.1v3.9M64.4 8.5v2.9M67.8 8.6v2.9M71.1 7.5v5.0M74.4 8.7v2.6M77.8 7.9v4.3M81.1 8.2v3.7M84.4 7.6v4.9M87.8 7.6v4.8M91.1 6.0v8.1M94.4 6.5v7.0M97.8 6.5v7.0M101.1 5.2v9.7M104.4 7.4v5.2M107.8 5.6v8.9M111.1 7.5v5.0M114.4 7.9v4.2M117.8 8.3v3.5M121.1 8.3v3.4M124.4 8.8v2.4M127.8 8.2v3.6M131.1 8.6v2.9M134.4 8.1v3.9M137.8 7.2v5.6M141.1 6.8v6.4M144.4 6.3v7.5M147.8 7.0v6.1M151.1 6.3v7.4M154.4 6.1v7.8M157.8 4.3v11.4M161.1 3.6v12.8M164.4 5.6v8.7M167.8 5.2v9.5M171.1 4.7v10.6M174.4 4.4v11.3M177.8 3.2v13.7M181.1 3.2v13.7M184.4 4.7v10.5M187.8 5.9v8.1M191.1 4.9v10.1M194.4 5.5v9.1M197.8 5.3v9.4M201.1 4.8v10.4M204.4 5.9v8.3M207.8 6.6v6.7M211.1 6.9v6.2M214.4 7.2v5.6M217.8 8.4v3.2M221.1 7.9v4.3M224.4 5.5v9.1M227.8 7.3v5.5M231.1 7.4v5.1M234.4 8.0v4.1M237.8 8.4v3.1M241.1 7.9v4.2M244.4 5.8v8.4M247.8 7.6v4.8M251.1 8.9v2.3M254.4 7.0v6.0M257.8 8.4v3.3M261.1 9.2v1.5M264.4 8.8v2.5M267.8 8.2v3.7M271.1 8.9v2.2M274.4 8.6v2.8M277.8 8.7v2.6M281.1 7.8v4.5M284.4 7.4v5.2M287.8 8.8v2.4M291.1 8.7v2.6M294.4 7.9v4.1M297.8 8.8v2.4M301.1 7.1v5.8M304.4 7.3v5.5M307.8 7.4v5.2M311.1 8.8v2.5M314.4 8.9v2.1M317.8 9.2v1.5M321.1 8.6v2.9M324.4 7.6v4.9M327.8 6.8v6.3M331.1 7.7v4.6M334.4 9.0v2.1M337.8 9.0v2.0M341.1 7.6v4.7M344.4 7.7v4.6M347.8 7.7v4.6M351.1 8.9v2.2M354.4 7.2v5.6M357.8 7.9v4.2M361.1 8.7v2.7M364.4 8.3v3.3M367.8 7.6v4.8M371.1 8.1v3.9M374.4 8.3v3.4M377.8 9.2v1.7M381.1 7.2v5.7M384.4 8.7v2.6M387.8 7.2v5.6M391.1 8.5v3.0M394.4 9.2v1.5M397.8 7.3v5.5" stroke="#b8aa8e" stroke-width="1.6" fill="none"></path></svg></div>
+<span class="band"></span>
+<span class="mk m0" style="left: 30%"><b>01<i>観察</i></b></span>
+<span class="mk m1" style="left: 44%"><b>02<i>判断</i></b></span>
+<span class="mk m2" style="left: 58%"><b>03<i>介入</i></b></span>
+<span class="mk m3" style="left: 86%"><b>04<i>結果</i></b></span>
+<span class="cur"></span>
+</div>
+</div>
+<div class="raxis mono" aria-hidden="true"><span>t₀</span><span>Time →</span></div>
+<figcaption class="mono" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Fig. B-01 一つの判断を、多視点の記録の上で 観察・判断・介入・結果 に分けて示す概念図</figcaption>
+</figure>
+<div class="rcards" role="radiogroup" aria-label="記録の段階">
+<button type="button" class="rcard" role="radio" aria-checked="false" tabindex="-1">
+<span class="rk mono">01 · Observation</span>
+<span class="rt">観察</span>
+<span class="rbody"><p>サンプルの色・粘性・泡立ち。操作対象物の状態変化に着目する（手の動きだけでなく）。</p><span class="mono">CAM-1 · CAM-3</span></span>
+</button>
+<button type="button" class="rcard" role="radio" aria-checked="true" tabindex="0">
+<span class="rk mono">02 · Decision</span>
+<span class="rt">判断</span>
+<span class="rbody"><span class="rq min">「ここで止めるか、あと10秒続けるか」</span><p>目盛りには現れない判断。</p><span class="mono">MIC · CAM-3 · Protocol 02</span></span>
+</button>
+<button type="button" class="rcard" role="radio" aria-checked="false" tabindex="-1">
+<span class="rk mono">03 · Intervention</span>
+<span class="rt">介入</span>
+<span class="rbody"><p>次の工程の条件を分岐させる。</p><span class="mono">CAM-2 · CAM-3</span></span>
+</button>
+<button type="button" class="rcard" role="radio" aria-checked="false" tabindex="-1">
+<span class="rk mono">04 · Result</span>
+<span class="rt">結果</span>
+<span class="rbody"><p>結果指標（成功・失敗・QC）と紐づける。</p><span class="mono">SCREEN · CAM-1</span></span>
+</button>
+</div>
+</div>
+</section>
 
-      <p class="mission__statement fade-in">
-        熟練者が実際に使っている<strong>判断基準</strong>や、<br>
-        不記載になりやすい情報を<em>継続的に集め、整理し</em>、<br>
-        次世代へ引き渡せる形式に変換する。
-      </p>
+<section id="structure" style="background: #ffffff">
+<div class="wrap sec">
+<div class="shead">
+<div style="flex: 1.4 1 420px">
+<div class="sid mono">Section 04 / Structure</div>
+<h2 class="h2"><span class="l">どう動くか。</span><span class="l"><span class="mark">体系図。</span></span></h2>
+</div>
+<p class="ssub">4つのロールが上流から下流へ繋がり、運用ループによって継続的に更新される。図はその全体像を示す。</p>
+</div>
+<div class="mono" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 12px; color: #6b6152; margin-bottom: 14px">
+<span>Fig. S-01 / System Pipeline</span><span style="color: #6f5a32">Upstream → Downstream</span>
+</div>
+<div class="swhint mono"><span>4 Roles · A → D</span><span>Swipe →</span></div>
+<div class="pipe swipe" role="region" aria-label="4つのロール">
+<article class="role">
+<div style="display: flex; align-items: center; gap: 14px; min-height: 62px">
+<span class="rl">A</span>
+<div>
+<div class="mono" style="color: #6f5a32">上流 · Role-A</div>
+<h3 style="font-size: 18px; font-weight: 900; line-height: 1.4">パートナーシップ / ブランディング</h3>
+</div>
+</div>
+<div class="io"><b class="mono">In</b><span class="cin">Lab</span><span class="cin">PI</span><span class="cin">Org.</span></div>
+<p style="font-size: 15px; line-height: 1.85; color: #3d362d">熟練者・研究室・企業との関係構築。LEGENDSレクチャー、Troubleshooting Night、Lab Hero Storiesによる発信と協力者の獲得。</p>
+<div class="io" style="margin-top: auto"><b class="mono">Out</b><span class="cout">協力合意</span><span class="cout">案件</span></div>
+</article>
+<article class="role">
+<div style="display: flex; align-items: center; gap: 14px; min-height: 62px">
+<span class="rl">B</span>
+<div>
+<div class="mono" style="color: #6f5a32">現場 · Role-B</div>
+<h3 style="font-size: 18px; font-weight: 900; line-height: 1.4">データ収集</h3>
+</div>
+</div>
+<div class="io"><b class="mono">In</b><span class="cin">手順</span><span class="cin">機材</span><span class="cin">音声</span></div>
+<p style="font-size: 15px; line-height: 1.85; color: #3d362d">熟練研究者による実験の実施・聞き取り・多視点撮影を一体で実施。俯瞰・側面・対象クローズアップ・プロトコル画面・音声を同時取得。</p>
+<div class="io" style="margin-top: auto"><b class="mono">Out</b><span class="cout">生データ</span><span class="cout">映像</span></div>
+</article>
+<article class="role">
+<div style="display: flex; align-items: center; gap: 14px; min-height: 62px">
+<span class="rl">C</span>
+<div>
+<div class="mono" style="color: #6f5a32">基盤 · Role-C</div>
+<h3 style="font-size: 18px; font-weight: 900; line-height: 1.4">データ整備 / アーカイブ</h3>
+</div>
+</div>
+<div class="io"><b class="mono">In</b><span class="cin">スキーマ</span><span class="cin">メタ</span></div>
+<p style="font-size: 15px; line-height: 1.85; color: #3d362d">データスキーマ（メタデータ、手順ID、機材情報、環境条件等）の整備。保存・検索・再利用の可能性を担保する。</p>
+<div class="io" style="margin-top: auto"><b class="mono">Out</b><span class="cout">索引</span><span class="cout">保存</span></div>
+</article>
+<article class="role">
+<div style="display: flex; align-items: center; gap: 14px; min-height: 62px">
+<span class="rl">D</span>
+<div>
+<div class="mono" style="color: #6f5a32">下流 · Role-D</div>
+<h3 style="font-size: 18px; font-weight: 900; line-height: 1.4">解析 / モデル化</h3>
+</div>
+</div>
+<div class="io"><b class="mono">In</b><span class="cin">注釈</span><span class="cin">指標</span></div>
+<p style="font-size: 15px; line-height: 1.85; color: #3d362d">不記載情報を質問群・項目群・根拠として構造化。動画・注釈・結果指標との紐づけと、再利用可能な表現への変換。</p>
+<div class="io" style="margin-top: auto"><b class="mono">Out</b><span class="cout">項目集</span><span class="cout">教材</span></div>
+</article>
+</div>
 
-      <div class="mission__flow fade-in">
-        <div class="mission__cell">
-          <div class="mission__cell-id">M-01</div>
-          <div class="mission__cell-title">Data</div>
-          <div class="mission__cell-kana">収集 · 記録</div>
-          <p class="mission__cell-body">熟練者の現場で観察・聞き取り・多視点撮影を一体で実施。条件分岐の瞬間と、その判断根拠を捉える。</p>
-          <div class="mission__cell-spec">SPEC · VIDEO + AUDIO + PROTOCOL</div>
-        </div>
-        <div class="mission__arrow">
-          <svg viewBox="0 0 40 16" width="40" height="16" fill="none">
-            <line x1="0" y1="8" x2="34" y2="8" stroke="currentColor" stroke-width="1.4"/>
-            <polyline points="28,2 36,8 28,14" fill="none" stroke="currentColor" stroke-width="1.4"/>
-          </svg>
-        </div>
-        <div class="mission__cell">
-          <div class="mission__cell-id">M-02</div>
-          <div class="mission__cell-title">Model</div>
-          <div class="mission__cell-kana">構造化 · モデル化</div>
-          <p class="mission__cell-body">観察→判断→介入→結果のチェーンを取り出し、項目・根拠・分岐として再利用可能な形へ。</p>
-          <div class="mission__cell-spec">SPEC · SCHEMA + ANNOTATION</div>
-        </div>
-        <div class="mission__arrow">
-          <svg viewBox="0 0 40 16" width="40" height="16" fill="none">
-            <line x1="0" y1="8" x2="34" y2="8" stroke="currentColor" stroke-width="1.4"/>
-            <polyline points="28,2 36,8 28,14" fill="none" stroke="currentColor" stroke-width="1.4"/>
-          </svg>
-        </div>
-        <div class="mission__cell">
-          <div class="mission__cell-id">M-03</div>
-          <div class="mission__cell-title">Operation</div>
-          <div class="mission__cell-kana">活用 · 更新</div>
-          <p class="mission__cell-body">教材・テンプレートとして還元し、現場のフィードバックを受けて継続的に育てる。</p>
-          <div class="mission__cell-spec">SPEC · TEMPLATE + DATASET</div>
-        </div>
-      </div>
-    </section>
+<div class="loop">
+<span class="cm tl"></span><span class="cm tr"></span><span class="cm bl"></span><span class="cm br"></span>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 24px; margin-bottom: clamp(22px, 2.8cqi, 36px)">
+<h3 style="font-size: clamp(19px, 2cqi, 26px); font-weight: 900; line-height: 1.4">運用ループ — Continuous Operation</h3>
+<div class="mono" style="color: #b8aa8e">Fig. L-02 · 継続稼働</div>
+</div>
+<div class="lsteps">
+<div class="lc">
+<div class="lh mono">01 · Extract</div>
+<div class="lb"><div style="font-size: 25px; font-weight: 900; line-height: 1.3">抽出</div><p style="font-size: 13.5px; line-height: 1.65; color: #b8aa8e">熟練者の語りから不記載情報を取り出す</p></div>
+</div>
+<div class="la"><svg viewBox="0 0 20 16" width="20" height="16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 8h17M11 2l7 6-7 6"></path></svg></div>
+<div class="lc">
+<div class="lh mono" style="animation-delay: 1.5s">02 · Structure</div>
+<div class="lb"><div style="font-size: 25px; font-weight: 900; line-height: 1.3">構造化</div><p style="font-size: 13.5px; line-height: 1.65; color: #b8aa8e">What / Why / When の項目に整理する</p></div>
+</div>
+<div class="la"><svg viewBox="0 0 20 16" width="20" height="16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 8h17M11 2l7 6-7 6"></path></svg></div>
+<div class="lc">
+<div class="lh mono" style="animation-delay: 3s">03 · Record</div>
+<div class="lb"><div style="font-size: 25px; font-weight: 900; line-height: 1.3">記録</div><p style="font-size: 13.5px; line-height: 1.65; color: #b8aa8e">動画・音声・注釈に紐づけて保存する</p></div>
+</div>
+<div class="la"><svg viewBox="0 0 20 16" width="20" height="16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 8h17M11 2l7 6-7 6"></path></svg></div>
+<div class="lc">
+<div class="lh mono" style="animation-delay: 4.5s">04 · Link</div>
+<div class="lb"><div style="font-size: 25px; font-weight: 900; line-height: 1.3">紐づけ</div><p style="font-size: 13.5px; line-height: 1.65; color: #b8aa8e">結果指標（成功・失敗）に接続</p></div>
+</div>
+<div class="la"><svg viewBox="0 0 20 16" width="20" height="16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 8h17M11 2l7 6-7 6"></path></svg></div>
+<div class="lc">
+<div class="lh mono" style="animation-delay: 6s">05 · Update</div>
+<div class="lb"><div style="font-size: 25px; font-weight: 900; line-height: 1.3">更新</div><p style="font-size: 13.5px; line-height: 1.65; color: #b8aa8e">テンプレ・項目集を継続的に育てる</p></div>
+</div>
+</div>
+<div class="lret"><span class="mono">Return / 反復</span></div>
+<div class="lretm mono"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12a8 8 0 1 0 3-6.2M4 4v5h5"></path></svg><span>Return / 反復 — 05 → 01</span></div>
+</div>
+</div>
+</section>
 
-    <!-- §03 Pillars -->
-    <section class="section" id="pillars">
-      <div class="section__head fade-in">
-        <div>
-          <div class="section__id">SECTION · 03 / TWO PILLARS</div>
-          <h2 class="section__title">二つの柱。<span class="section__title-accent">何をするか。</span></h2>
-        </div>
-        <p class="section__sub">
-          (A) "書くべきこと"の確立 — プロトコルに含まれるべき項目を体系として固める。<br>
-          (B) 判断プロセスの記録とモデル化 — 熟練者の判断を観察可能な単位で記録する。
-        </p>
-      </div>
+<section id="benefits">
+<div class="wrap sec">
+<div class="shead">
+<div style="flex: 1.4 1 420px">
+<div class="sid mono">Section 05 / Why Join</div>
+<h2 class="h2"><span class="l">なぜ、</span><span class="l"><span class="mark">参加するのか。</span></span></h2>
+</div>
+<p class="ssub"><span class="nw">BioSkill-Legacy</span>は、参加した一人ひとりに具体的な見返りがある。あなたが熟練者でも、立ち上げ中の研究室でも、学生でも、メーカーでも — 受け取れる価値と、最初の一歩がある。</p>
+</div>
+<div>
+<div class="stabs" role="tablist" aria-label="対象を選ぶ">
+<button type="button" class="stab" role="tab" id="stab-1" aria-controls="stake-1" aria-selected="true" tabindex="0">熟練研究者</button>
+<button type="button" class="stab" role="tab" id="stab-2" aria-controls="stake-2" aria-selected="false" tabindex="-1">研究室・PI</button>
+<button type="button" class="stab" role="tab" id="stab-3" aria-controls="stake-3" aria-selected="false" tabindex="-1">若手研究者・学生</button>
+<button type="button" class="stab" role="tab" id="stab-4" aria-controls="stake-4" aria-selected="false" tabindex="-1">企業・メーカー</button>
+</div>
+<article id="stake-1" class="stake">
+<div class="who">
+<div class="mono" style="color: #6f5a32">For · Veteran Researchers</div>
+<h3 style="font-size: clamp(22px, 2.1cqi, 28px); font-weight: 900; line-height: 1.35">熟練研究者</h3>
+<div class="mono" style="color: #6b6152; font-size: 11px">Stake · S-01</div>
+</div>
+<div class="smain">
+<p class="quote min">口頭で消えていた判断が、引用される知見になる。</p>
+<ul class="blist">
+<li>同じ説明を何度もしなくてよくなる — 育成負荷の軽減</li>
+<li>あなたの判断と工夫が、クレジット付きで記録される</li>
+<li style="border-bottom: 1px solid #d8d1bf">自分でも言語化していなかった勘所が、構造化されて返ってくる</li>
+</ul>
+</div>
+<div class="fstep">
+<div class="mono" style="color: #6f5a32">First Step</div>
+<h4 style="font-size: 20px; font-weight: 900; line-height: 1.4">30分の聞き取りから</h4>
+<p style="font-size: 14.5px; line-height: 1.8; color: #3d362d">短時間のインタビューで、まず1つの判断ポイントを言語化します。撮影・データ提供は段階を踏んで決められます。</p>
+<a href="#steps" class="slink"><span>この入り口から始める</span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+<article id="stake-2" class="stake">
+<div class="who">
+<div class="mono" style="color: #6f5a32">For · Labs &amp; PIs</div>
+<h3 style="font-size: clamp(22px, 2.1cqi, 28px); font-weight: 900; line-height: 1.35">研究室・PI</h3>
+<div class="mono" style="color: #6b6152; font-size: 11px">Stake · S-02</div>
+</div>
+<div class="smain">
+<p class="quote min">次のメンバーが、あなたを呼ばずに立ち上がる。</p>
+<ul class="blist">
+<li>属人化した手順が明文化され、引き継ぎコストが下がる</li>
+<li>新規メンバーが独立して動けるまでの期間が短縮される</li>
+<li style="border-bottom: 1px solid #d8d1bf">再現できない時の原因切り分けが速くなる</li>
+</ul>
+</div>
+<div class="fstep">
+<div class="mono" style="color: #6f5a32">First Step</div>
+<h4 style="font-size: 20px; font-weight: 900; line-height: 1.4">典型プロトコル1本から</h4>
+<p style="font-size: 14.5px; line-height: 1.8; color: #3d362d">ラボで最もよく使う手技を1本選び、共同で構造化します。成果はラボのオンボーディング教材として残ります。</p>
+<a href="#steps" class="slink"><span>この入り口から始める</span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+<article id="stake-3" class="stake">
+<div class="who">
+<div class="mono" style="color: #6f5a32">For · Early-Career</div>
+<h3 style="font-size: clamp(22px, 2.1cqi, 28px); font-weight: 900; line-height: 1.35">若手研究者・学生</h3>
+<div class="mono" style="color: #6b6152; font-size: 11px">Stake · S-03</div>
+</div>
+<div class="smain">
+<p class="quote min">先輩の頭の中が、手元で読める。</p>
+<ul class="blist">
+<li>“なぜそうするか” — 判断の根拠と条件分岐が注釈付きで得られる</li>
+<li>成功例だけでなく、失敗パターンと回避法から学べる</li>
+<li style="border-bottom: 1px solid #d8d1bf">自分の判断と熟練者の判断を、同じ動画で照合できる</li>
+</ul>
+</div>
+<div class="fstep">
+<div class="mono" style="color: #6f5a32">First Step</div>
+<h4 style="font-size: 20px; font-weight: 900; line-height: 1.4">ケーススタディを読む</h4>
+<p style="font-size: 14.5px; line-height: 1.8; color: #3d362d">整理済みの事例を読むだけでも価値があります。投稿・コメントで参加するとさらに学習の幅が広がります。</p>
+<a href="#steps" class="slink"><span>この入り口から始める</span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+<article id="stake-4" class="stake" style="border-bottom: 1px solid #14110d">
+<div class="who">
+<div class="mono" style="color: #6f5a32">For · Industry Partners</div>
+<h3 style="font-size: clamp(22px, 2.1cqi, 28px); font-weight: 900; line-height: 1.35">企業・メーカー</h3>
+<div class="mono" style="color: #6b6152; font-size: 11px">Stake · S-04</div>
+</div>
+<div class="smain">
+<p class="quote min">現場で何が詰まっているか、ようやく見える。</p>
+<ul class="blist">
+<li>ユーザの実環境での製品挙動と、運用上の詰まりポイントが可視化</li>
+<li>観察された不具合・要望が、製品改善・新規提案の起点になる</li>
+<li style="border-bottom: 1px solid #d8d1bf">実験環境全体（ベンチ・機材・試薬・運用）の改善検討に接続できる</li>
+</ul>
+</div>
+<div class="fstep">
+<div class="mono" style="color: #6f5a32">First Step</div>
+<h4 style="font-size: 20px; font-weight: 900; line-height: 1.4">共同テーマの相談から</h4>
+<p style="font-size: 14.5px; line-height: 1.8; color: #3d362d">関心領域・対象実験についてミーティングを設定します。データへのアクセス条件はテーマごとに合意します。</p>
+<a href="#steps" class="slink"><span>この入り口から始める</span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+</div>
+</div>
+</section>
 
-      <div class="pillars__grid">
-        <article class="pillar fade-in">
-          <div class="pillar__head">
-            <div class="pillar__head-id">A</div>
-            <div class="pillar__head-meta">PILLAR · 01<strong>FOCUS · WHAT / WHY</strong></div>
-          </div>
-          <h3 class="pillar__title">"<em>書くべきこと</em>"の確立</h3>
-          <p class="pillar__sub">プロトコルに「書かれるべき項目」と「根拠」を体系として確立する。スタイルではなく、内容にフォーカスする。</p>
-          <div class="pillar__items">
-            <div class="pillar__item"><span class="pillar__item-key">A-01</span><span>実験プロトコルに含めるべき記載項目の定義</span></div>
-            <div class="pillar__item"><span class="pillar__item-key">A-02</span><span>なぜそれが必要か — 根拠と条件分岐の体系化</span></div>
-            <div class="pillar__item"><span class="pillar__item-key">A-03</span><span>LLM等による整形・テンプレート化は項目確定後に加速</span></div>
-            <div class="pillar__item"><span class="pillar__item-key">A-04</span><span>ドメインを跨いで利用可能な共通の語彙の整備</span></div>
-          </div>
-        </article>
+<section id="action" style="background: #ffffff">
+<div class="wrap sec">
+<div class="shead">
+<div style="flex: 1.4 1 420px">
+<div class="sid mono">Section 06 / Get Involved</div>
+<h2 class="h2"><span class="l">参加する。</span><span class="l"><span class="mark">経験を、遺産に。</span></span></h2>
+</div>
+<p class="ssub">参加の入り口は複数ある。5分で投稿できる事例から、共同検証・拠点利用まで。あなたの関わり方を選んでほしい。</p>
+</div>
+<div class="cta" id="post">
+<span class="cm tl"></span><span class="cm tr"></span><span class="cm bl"></span><span class="cm br"></span>
+<div style="flex: 3 1 400px; display: flex; flex-direction: column; gap: 16px">
+<div class="mono" style="color: #c8a86a">Primary · 5 min</div>
+<h3 style="font-size: clamp(24px, 3.1cqi, 42px); font-weight: 900; line-height: 1.4; letter-spacing: -0.01em">現場で起きた一つの事例を、投稿してください。</h3>
+<p style="font-size: 16px; line-height: 1.9; color: #d9d0bd; max-width: 36em">失敗談・突破口・現場の工夫 — いただいた事例は、収集開始後に整理・構造化し、教材として還元していきます。匿名で構いません。</p>
+</div>
+<div style="flex: 2 1 300px; display: flex; flex-direction: column; gap: 14px">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSf2mU52qhlUtysjfHWljK88Lg0uYSXrhqlgi0lYbDvRJ2mz6A/viewform" target="_blank" rel="noopener noreferrer" class="gobtn">
+<span>事例を投稿する（β）</span>
+<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+</a>
+<div class="mono" style="display: flex; flex-wrap: wrap; gap: 8px; letter-spacing: 0.1em">
+<span class="chip">所要 5 min</span><span class="chip">匿名可</span><span class="chip">Google フォーム</span>
+</div>
+<div style="color: #b8aa8e; font-size: 13px; line-height: 1.6">暫定運用 · お問い合わせフォーム経由</div>
+</div>
+<p style="flex: 1 1 100%; font-size: 14px; line-height: 1.85; color: #b8aa8e; padding-top: 20px; border-top: 1px dashed #5c5142">現在は準備期間中です。事例の投稿は、当面 BioSkillDX 共通のお問い合わせフォームで受け付けています（まずは関心のご連絡として歓迎します）。本格的な事例収集の開始は、追ってこのページでお知らせします。</p>
+</div>
 
-        <article class="pillar fade-in">
-          <div class="pillar__head">
-            <div class="pillar__head-id">B</div>
-            <div class="pillar__head-meta">PILLAR · 02<strong>FOCUS · DECISION CHAIN</strong></div>
-          </div>
-          <h3 class="pillar__title">判断プロセスの<em>記録</em>とモデル化</h3>
-          <p class="pillar__sub">熟練者の判断（メンタルモデル）を、観察可能な単位で記録し、将来のワールドモデル構築へ接続する。</p>
-          <div class="pillar__items">
-            <div class="pillar__item"><span class="pillar__item-key">B-01</span><span>観察 → 判断 → 介入 → 結果 のチェーンを記録</span></div>
-            <div class="pillar__item"><span class="pillar__item-key">B-02</span><span>操作対象物の状態変化に着目（手の動きだけでなく）</span></div>
-            <div class="pillar__item"><span class="pillar__item-key">B-03</span><span>アフォーダンスに基づく記録単位の設計</span></div>
-            <div class="pillar__item"><span class="pillar__item-key">B-04</span><span>将来的なワールドモデル構築への接続</span></div>
-          </div>
-        </article>
-      </div>
-    </section>
+<div class="swhint mono" style="margin-top: 28px"><span>投稿カテゴリ 01–03</span><span>Swipe →</span></div>
+<div class="grid3 swipe" role="region" aria-label="投稿カテゴリ" style="margin-top: 20px">
+<article class="card" style="background: #f7f5ef">
+<div class="mono" style="color: #6f5a32">Cat 01 · Troubleshooting Night</div>
+<h4 style="font-size: 20px; font-weight: 900; line-height: 1.4">失敗談・ヒヤリハット</h4>
+<p style="font-size: 15px; line-height: 1.85; color: #3d362d">何が見えて、どう判断し、何を変え、どうなったか。観察と介入のチェーン。</p>
+<div class="mono" style="margin-top: auto; padding-top: 14px; border-top: 1px solid #d8d1bf; color: #6b6152; font-size: 12.5px">月1回 / 短時間OK · <span style="color: #14110d; font-weight: 700">推奨</span></div>
+</article>
+<article class="card" style="background: #f7f5ef">
+<div class="mono" style="color: #6f5a32">Cat 02 · Lab Hero Stories</div>
+<h4 style="font-size: 20px; font-weight: 900; line-height: 1.4">困りごとの解決事例</h4>
+<p style="font-size: 15px; line-height: 1.85; color: #3d362d">現場で試行錯誤して見つけた突破口を共有する。再利用可能な突破事例。</p>
+<div class="mono" style="margin-top: auto; padding-top: 14px; border-top: 1px solid #d8d1bf; color: #6b6152; font-size: 12.5px">Anytime · ストック型 · <span style="color: #14110d; font-weight: 700">推奨</span></div>
+</article>
+<article class="card" style="background: #f7f5ef">
+<div class="mono" style="color: #6f5a32">Cat 03 · Lab Hacks &amp; Gear</div>
+<h4 style="font-size: 20px; font-weight: 900; line-height: 1.4">実験の工夫 · 機材Tips</h4>
+<p style="font-size: 15px; line-height: 1.85; color: #3d362d">道具や環境の改善で成功率を上げた事例。小さな工夫こそ価値がある。</p>
+<div class="mono" style="margin-top: auto; padding-top: 14px; border-top: 1px solid #d8d1bf; color: #6b6152; font-size: 12.5px">Anytime · 写真歓迎 · <span style="color: #14110d; font-weight: 700">推奨</span></div>
+</article>
+</div>
 
-    <!-- §04 Structure -->
-    <section class="section section--alt" id="structure">
-      <div class="section__head fade-in">
-        <div>
-          <div class="section__id">SECTION · 04 / STRUCTURE</div>
-          <h2 class="section__title">どう動くか。<span class="section__title-accent">体系図。</span></h2>
-        </div>
-        <p class="section__sub">
-          4つのロールが上流から下流へ繋がり、運用ループによって継続的に更新される。図はその全体像を示す。
-        </p>
-      </div>
+<div id="steps" style="margin-top: clamp(48px, 6cqi, 88px)">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 24px; margin-bottom: 24px">
+<h3 style="font-size: clamp(19px, 2cqi, 26px); font-weight: 900; line-height: 1.4">参加の段階 — Engagement Protocol</h3>
+<div class="mono" style="color: #6b6152">Proto · 01 → 04 / 任意の段階から</div>
+</div>
+<div class="swhint mono"><span>Step 01 → 04</span><span>Swipe →</span></div>
+<div class="stairs swipe" role="region" aria-label="参加の段階">
+<article class="stair s1">
+<div class="mono" style="color: #6f5a32">Step 01</div>
+<h4 style="font-size: 20px; font-weight: 900; line-height: 1.4">ライト参加</h4>
+<p style="font-size: 14.5px; line-height: 1.8; color: #3d362d">短時間の聞き取り、プロトコルレビュー、質問項目へのコメント。</p>
+<div class="mono" style="margin-top: auto; color: #6b6152; font-size: 12.5px">Effort · <span style="color: #14110d; font-weight: 700">30 min</span></div>
+</article>
+<article class="stair s2">
+<div class="mono" style="color: #6f5a32">Step 02</div>
+<h4 style="font-size: 20px; font-weight: 900; line-height: 1.4">データ提供</h4>
+<p style="font-size: 14.5px; line-height: 1.8; color: #3d362d">最小構成（俯瞰・側面・対象・プロトコル・音声）での撮影。</p>
+<div class="mono" style="margin-top: auto; color: #6b6152; font-size: 12.5px">Effort · <span style="color: #14110d; font-weight: 700">2–4 h</span></div>
+</article>
+<article class="stair s3">
+<div class="mono" style="color: #6f5a32">Step 03</div>
+<h4 style="font-size: 20px; font-weight: 900; line-height: 1.4">共同で検証</h4>
+<p style="font-size: 14.5px; line-height: 1.8; color: #3d362d">結果指標（成功・失敗・QC）と紐づけたケーススタディ作成。</p>
+<div class="mono" style="margin-top: auto; color: #6b6152; font-size: 12.5px">Effort · <span style="color: #14110d; font-weight: 700">Joint</span></div>
+</article>
+<article class="stair s4">
+<div class="mono" style="color: #6f5a32">Step 04</div>
+<h4 style="font-size: 20px; font-weight: 900; line-height: 1.4">拠点利用</h4>
+<p style="font-size: 14.5px; line-height: 1.8; color: #3d362d">整備されたベンチ・機材環境での実験の実施と記録。</p>
+<div class="mono" style="margin-top: auto; color: #6b6152; font-size: 12.5px">Effort · <span style="color: #14110d; font-weight: 700">On-site</span></div>
+</article>
+</div>
+</div>
 
-      <div class="structure__body">
-        <!-- Pipeline diagram -->
-        <div class="structure__diagram-wrap fade-in">
-          <span class="structure__diagram-figref">FIG. S-01 / SYSTEM PIPELINE</span>
-          <div class="structure__diagram">
-            <svg viewBox="0 0 1100 360" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <pattern id="struct-grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                  <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#ebe5d4" stroke-width=".6"/>
-                </pattern>
-              </defs>
-              <rect x="0" y="0" width="1100" height="360" fill="url(#struct-grid)" opacity=".6"/>
-              <line x1="20" y1="180" x2="1080" y2="180" stroke="#14110d" stroke-width="1.5"/>
-              <polyline points="1066,170 1080,180 1066,190" fill="none" stroke="#14110d" stroke-width="1.5"/>
-              <text x="20" y="172" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#7a6f5e">UPSTREAM</text>
-              <text x="1020" y="172" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#a88c52">DOWN ↗</text>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: clamp(32px, 4cqi, 48px)">
+<a href="https://forms.gle/Hz3kwcN9M9HQGWse6" target="_blank" rel="noopener noreferrer" class="chan" style="background: #14110d; color: #f7f5ef">
+<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18v12H3zM3 7l9 7 9-7"></path></svg>
+<span>お問い合わせ</span>
+</a>
+<a href="https://www.youtube.com/@BioSkill-Legacy" target="_blank" rel="noopener noreferrer" class="chan">
+<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+<span>YouTube チャンネル</span>
+</a>
+<a href="https://github.com/BioSkillDX" target="_blank" rel="noopener noreferrer" class="chan">
+<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
+<span>GitHub</span>
+</a>
+</div>
+</div>
+</section>
 
-              <!-- Role A -->
-              <g>
-                <rect x="80" y="140" width="180" height="80" fill="#ffffff" stroke="#14110d" stroke-width="1.3"/>
-                <rect x="80" y="140" width="36" height="80" fill="#14110d"/>
-                <text x="98" y="186" text-anchor="middle" font-family="Lato, sans-serif" font-weight="900" font-size="22" fill="#c8a86a">A</text>
-                <text x="128" y="170" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="2" fill="#a88c52">上流</text>
-                <text x="128" y="194" font-family="Lato, Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#14110d">パートナーシップ</text>
-                <text x="128" y="210" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1" fill="#7a6f5e">ROLE-A</text>
-                <g><line x1="104" y1="100" x2="104" y2="140" stroke="#a88c52" stroke-width=".8" stroke-dasharray="2,2"/><rect x="82" y="78" width="44" height="22" fill="#f7f5ef" stroke="#a88c52" stroke-width=".8"/><text x="104" y="93" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d362d">Lab</text></g>
-                <g><line x1="156" y1="100" x2="156" y2="140" stroke="#a88c52" stroke-width=".8" stroke-dasharray="2,2"/><rect x="134" y="78" width="44" height="22" fill="#f7f5ef" stroke="#a88c52" stroke-width=".8"/><text x="156" y="93" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d362d">PI</text></g>
-                <g><line x1="208" y1="100" x2="208" y2="140" stroke="#a88c52" stroke-width=".8" stroke-dasharray="2,2"/><rect x="186" y="78" width="44" height="22" fill="#f7f5ef" stroke="#a88c52" stroke-width=".8"/><text x="208" y="93" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d362d">Org.</text></g>
-                <g><line x1="110" y1="220" x2="110" y2="260" stroke="#14110d" stroke-width=".8"/><rect x="82" y="260" width="56" height="22" fill="#14110d"/><text x="110" y="275" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#c8a86a">協力合意</text></g>
-                <g><line x1="180" y1="220" x2="180" y2="260" stroke="#14110d" stroke-width=".8"/><rect x="152" y="260" width="56" height="22" fill="#14110d"/><text x="180" y="275" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#c8a86a">案件</text></g>
-              </g>
-              <!-- Role B -->
-              <g>
-                <rect x="330" y="140" width="180" height="80" fill="#ffffff" stroke="#14110d" stroke-width="1.3"/>
-                <rect x="330" y="140" width="36" height="80" fill="#14110d"/>
-                <text x="348" y="186" text-anchor="middle" font-family="Lato, sans-serif" font-weight="900" font-size="22" fill="#c8a86a">B</text>
-                <text x="378" y="170" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="2" fill="#a88c52">現場</text>
-                <text x="378" y="194" font-family="Lato, Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#14110d">データ収集</text>
-                <text x="378" y="210" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1" fill="#7a6f5e">ROLE-B</text>
-                <g><line x1="354" y1="100" x2="354" y2="140" stroke="#a88c52" stroke-width=".8" stroke-dasharray="2,2"/><rect x="332" y="78" width="44" height="22" fill="#f7f5ef" stroke="#a88c52" stroke-width=".8"/><text x="354" y="93" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d362d">手順</text></g>
-                <g><line x1="406" y1="100" x2="406" y2="140" stroke="#a88c52" stroke-width=".8" stroke-dasharray="2,2"/><rect x="384" y="78" width="44" height="22" fill="#f7f5ef" stroke="#a88c52" stroke-width=".8"/><text x="406" y="93" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d362d">機材</text></g>
-                <g><line x1="458" y1="100" x2="458" y2="140" stroke="#a88c52" stroke-width=".8" stroke-dasharray="2,2"/><rect x="436" y="78" width="44" height="22" fill="#f7f5ef" stroke="#a88c52" stroke-width=".8"/><text x="458" y="93" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d362d">音声</text></g>
-                <g><line x1="360" y1="220" x2="360" y2="260" stroke="#14110d" stroke-width=".8"/><rect x="332" y="260" width="56" height="22" fill="#14110d"/><text x="360" y="275" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#c8a86a">生データ</text></g>
-                <g><line x1="430" y1="220" x2="430" y2="260" stroke="#14110d" stroke-width=".8"/><rect x="402" y="260" width="56" height="22" fill="#14110d"/><text x="430" y="275" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#c8a86a">映像</text></g>
-              </g>
-              <!-- Role C -->
-              <g>
-                <rect x="580" y="140" width="180" height="80" fill="#ffffff" stroke="#14110d" stroke-width="1.3"/>
-                <rect x="580" y="140" width="36" height="80" fill="#14110d"/>
-                <text x="598" y="186" text-anchor="middle" font-family="Lato, sans-serif" font-weight="900" font-size="22" fill="#c8a86a">C</text>
-                <text x="628" y="170" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="2" fill="#a88c52">基盤</text>
-                <text x="628" y="194" font-family="Lato, Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#14110d">データ整備</text>
-                <text x="628" y="210" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1" fill="#7a6f5e">ROLE-C</text>
-                <g><line x1="604" y1="100" x2="604" y2="140" stroke="#a88c52" stroke-width=".8" stroke-dasharray="2,2"/><rect x="582" y="78" width="44" height="22" fill="#f7f5ef" stroke="#a88c52" stroke-width=".8"/><text x="604" y="93" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d362d">スキーマ</text></g>
-                <g><line x1="656" y1="100" x2="656" y2="140" stroke="#a88c52" stroke-width=".8" stroke-dasharray="2,2"/><rect x="634" y="78" width="44" height="22" fill="#f7f5ef" stroke="#a88c52" stroke-width=".8"/><text x="656" y="93" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d362d">メタ</text></g>
-                <g><line x1="610" y1="220" x2="610" y2="260" stroke="#14110d" stroke-width=".8"/><rect x="582" y="260" width="56" height="22" fill="#14110d"/><text x="610" y="275" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#c8a86a">索引</text></g>
-                <g><line x1="680" y1="220" x2="680" y2="260" stroke="#14110d" stroke-width=".8"/><rect x="652" y="260" width="56" height="22" fill="#14110d"/><text x="680" y="275" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#c8a86a">保存</text></g>
-              </g>
-              <!-- Role D -->
-              <g>
-                <rect x="830" y="140" width="180" height="80" fill="#ffffff" stroke="#14110d" stroke-width="1.3"/>
-                <rect x="830" y="140" width="36" height="80" fill="#14110d"/>
-                <text x="848" y="186" text-anchor="middle" font-family="Lato, sans-serif" font-weight="900" font-size="22" fill="#c8a86a">D</text>
-                <text x="878" y="170" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="2" fill="#a88c52">下流</text>
-                <text x="878" y="194" font-family="Lato, Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#14110d">解析・モデル化</text>
-                <text x="878" y="210" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1" fill="#7a6f5e">ROLE-D</text>
-                <g><line x1="854" y1="100" x2="854" y2="140" stroke="#a88c52" stroke-width=".8" stroke-dasharray="2,2"/><rect x="832" y="78" width="44" height="22" fill="#f7f5ef" stroke="#a88c52" stroke-width=".8"/><text x="854" y="93" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d362d">注釈</text></g>
-                <g><line x1="906" y1="100" x2="906" y2="140" stroke="#a88c52" stroke-width=".8" stroke-dasharray="2,2"/><rect x="884" y="78" width="44" height="22" fill="#f7f5ef" stroke="#a88c52" stroke-width=".8"/><text x="906" y="93" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d362d">指標</text></g>
-                <g><line x1="860" y1="220" x2="860" y2="260" stroke="#14110d" stroke-width=".8"/><rect x="832" y="260" width="56" height="22" fill="#14110d"/><text x="860" y="275" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#c8a86a">項目集</text></g>
-                <g><line x1="930" y1="220" x2="930" y2="260" stroke="#14110d" stroke-width=".8"/><rect x="902" y="260" width="56" height="22" fill="#14110d"/><text x="930" y="275" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#c8a86a">教材</text></g>
-              </g>
+<section id="team">
+<div class="wrap sec">
+<div class="shead">
+<div style="flex: 1.4 1 420px">
+<div class="sid mono">Section 07 / Team</div>
+<h2 class="h2"><span class="l">運営する人びと。</span><span class="l"><span class="mark">Core team.</span></span></h2>
+</div>
+<p class="ssub"><span class="nw">BioSkill-Legacy</span>は、BioSkillDXの中で、生命科学領域の研究者・データエンジニア・コミュニケーターが手を組んで進めている研究プロジェクトです。</p>
+</div>
+<div class="swhint mono"><span>5 Members</span><span>Swipe →</span></div>
+<div class="team swipe" role="region" aria-label="メンバー">
+<div class="tcard">
+<div class="tp"><span class="cm tl"></span><span class="cm br"></span><img src="img/team-sasagawa-yohei.jpg" width="480" height="459" loading="lazy" decoding="async" alt="笹川 洋平"></div>
+<div class="mono" style="color: #6b6152; font-size: 11px; margin-top: 14px">Member · T-01</div>
+<div style="font-size: 18px; font-weight: 900; line-height: 1.5">笹川 洋平</div>
+<div style="font-size: 13.5px; line-height: 1.6; color: #3d362d">東京科学大学</div>
+</div>
+<div class="tcard">
+<div class="tp"><span class="cm tl"></span><span class="cm br"></span><img src="img/team-ohta-tazro.jpg" width="480" height="480" loading="lazy" decoding="async" alt="大田 達郎"></div>
+<div class="mono" style="color: #6b6152; font-size: 11px; margin-top: 14px">Member · T-02</div>
+<div style="font-size: 18px; font-weight: 900; line-height: 1.5">大田 達郎</div>
+<div style="font-size: 13.5px; line-height: 1.6; color: #3d362d">千葉大学</div>
+</div>
+<div class="tcard">
+<div class="tp"><span class="cm tl"></span><span class="cm br"></span><img src="img/team-ono-hiromasa.jpg" width="480" height="480" loading="lazy" decoding="async" alt="小野 浩雅"></div>
+<div class="mono" style="color: #6b6152; font-size: 11px; margin-top: 14px">Member · T-03</div>
+<div style="font-size: 18px; font-weight: 900; line-height: 1.5">小野 浩雅</div>
+<div style="font-size: 13.5px; line-height: 1.6; color: #3d362d">プラチナバイオ株式会社</div>
+</div>
+<div class="tcard">
+<div class="tp"><span class="cm tl"></span><span class="cm br"></span><img src="img/team-nikaido-itoshi.jpg" width="480" height="419" loading="lazy" decoding="async" alt="二階堂 愛"></div>
+<div class="mono" style="color: #6b6152; font-size: 11px; margin-top: 14px">Member · T-04</div>
+<div style="font-size: 18px; font-weight: 900; line-height: 1.5">二階堂 愛</div>
+<div style="font-size: 13.5px; line-height: 1.6; color: #3d362d">東京科学大学</div>
+</div>
+<div class="tcard">
+<div class="tp"><span class="cm tl"></span><span class="cm br"></span><img src="img/team-fujie-manabu.jpg" width="480" height="424" loading="lazy" decoding="async" alt="藤江 学"></div>
+<div class="mono" style="color: #6b6152; font-size: 11px; margin-top: 14px">Member · T-05</div>
+<div style="font-size: 18px; font-weight: 900; line-height: 1.5">藤江 学</div>
+<div style="font-size: 13.5px; line-height: 1.6; color: #3d362d">沖縄科学技術大学院大学</div>
+</div>
+</div>
+</div>
+</section>
 
-              <g transform="translate(20, 320)">
-                <text font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#7a6f5e">
-                  <tspan x="0" y="0">LEGEND ·</tspan>
-                  <tspan x="80" y="0" fill="#a88c52">─ ─ ─ INPUT</tspan>
-                  <tspan x="200" y="0" fill="#14110d">─── OUTPUT</tspan>
-                  <tspan x="320" y="0">BUS ─── DATA FLOW</tspan>
-                </text>
-              </g>
-              <text x="1080" y="350" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="9" fill="#a88c52" letter-spacing="2">FIG. S-01 / SYSTEM PIPELINE</text>
-            </svg>
-          </div>
-        </div>
+</main>
 
-        <!-- 4 Roles -->
-        <div class="structure__roles fade-in">
-          <div class="structure__role">
-            <div class="structure__role-head">
-              <span class="structure__role-letter">A</span>
-              <span class="structure__role-stage">上流</span>
-            </div>
-            <div class="structure__role-title">パートナーシップ / ブランディング</div>
-            <p class="structure__role-desc">熟練者・研究室・企業との関係構築。LEGENDSレクチャー、Troubleshooting Night、Lab Hero Storiesによる発信と協力者の獲得。</p>
-          </div>
-          <div class="structure__role">
-            <div class="structure__role-head">
-              <span class="structure__role-letter">B</span>
-              <span class="structure__role-stage">現場</span>
-            </div>
-            <div class="structure__role-title">データ収集</div>
-            <p class="structure__role-desc">熟練研究者による実験の実施・聞き取り・多視点撮影を一体で実施。俯瞰・側面・対象クローズアップ・プロトコル画面・音声を同時取得。</p>
-          </div>
-          <div class="structure__role">
-            <div class="structure__role-head">
-              <span class="structure__role-letter">C</span>
-              <span class="structure__role-stage">基盤</span>
-            </div>
-            <div class="structure__role-title">データ整備 / アーカイブ</div>
-            <p class="structure__role-desc">データスキーマ（メタデータ、手順ID、機材情報、環境条件等）の整備。保存・検索・再利用の可能性を担保する。</p>
-          </div>
-          <div class="structure__role">
-            <div class="structure__role-head">
-              <span class="structure__role-letter">D</span>
-              <span class="structure__role-stage">下流</span>
-            </div>
-            <div class="structure__role-title">解析 / モデル化</div>
-            <p class="structure__role-desc">不記載情報を質問群・項目群・根拠として構造化。動画・注釈・結果指標との紐づけと、再利用可能な表現への変換。</p>
-          </div>
-        </div>
+<footer class="ft">
+<div class="wrap" style="padding-top: clamp(48px, 6cqi, 88px)">
+<div style="display: flex; flex-wrap: wrap; gap: 36px clamp(40px, 6cqi, 96px)">
+<div style="flex: 2 1 320px; display: flex; flex-direction: column; gap: 18px">
+<a href="#top" class="brand" aria-label="BioSkill-Legacy トップへ">
+<svg viewBox="0 0 228.03 35.54" width="142" height="22" fill="currentColor" aria-hidden="true"><path d="M0,3.51h14.48c5.86,0,10.24,2.57,10.24,7.98,0,3.97-2.03,6.18-5.55,7.35v.09c4.19.86,6.36,3.11,6.36,6.95,0,7.53-6.63,9.11-12.27,9.11H0V3.51ZM8.39,15.96h2.35c2.75,0,5.59-.68,5.59-3.34,0-2.89-2.71-3.16-5.5-3.16h-2.44v6.49ZM8.39,29.04h2.48c3.07,0,6.27-.45,6.27-3.65,0-3.43-3.29-3.74-6.18-3.74h-2.57v7.4Z"></path><rect x="29.05" y="3.36" width="8.12" height="5.95"></rect><rect x="29.05" y="11.5" width="8.12" height="23.5"></rect><path d="M40.23,23.27c0-7.8,5.91-12.31,13.67-12.31s13.67,4.51,13.67,12.31-5.91,12.27-13.67,12.27-13.67-4.51-13.67-12.27ZM59.18,23.27c0-3.52-1.53-6.63-5.28-6.63s-5.28,3.11-5.28,6.63,1.53,6.59,5.28,6.59,5.28-3.11,5.28-6.59Z"></path><path d="M70.18,27.24c2.17,1.17,5.19,2.08,8.66,2.08,2.66,0,5.19-.54,5.19-3.07,0-5.86-14.89-2.17-14.89-13.62,0-7.58,7.4-9.65,13.71-9.65,3.02,0,6,.45,8.12,1.17l-.54,6.5c-2.17-.99-4.6-1.44-6.99-1.44-2.12,0-5.64.18-5.64,2.93,0,5.1,14.89,1.67,14.89,13.04,0,8.16-6.86,10.37-13.85,10.37-2.93,0-6.59-.45-9.38-1.35l.72-6.95Z"></path><path d="M95.44,3.43h8.12v17.94h.09l6.77-9.88h8.89l-8.16,10.78,8.84,12.72h-9.83l-6.5-11.64h-.09v11.64h-8.12V3.43Z"></path><rect x="122.14" y="3.36" width="8.12" height="5.95"></rect><rect x="122.14" y="11.5" width="8.12" height="23.5"></rect><path d="M135.41,3.43h8.12v31.56h-8.12V3.43Z"></path><path d="M148.67,3.43h8.12v31.56h-8.12V3.43Z"></path><path d="M162.66,0h12.72c12.17,0,20.69,3.81,20.69,17.33s-8.76,17.63-20.69,17.63h-12.72V0ZM171.98,28.05h3.61c6.96,0,10.87-3.61,10.87-10.57s-4.06-10.57-10.87-10.57h-3.61v21.14Z"></path><path d="M204.18,16.58L194.07,0h10.87l5.86,11.52,6.01-11.52h10.22l-10.22,16.58,11.22,18.38h-11.12l-6.76-12.87-6.71,12.87h-10.57l11.32-18.38Z"></path></svg>
+<span class="mono" style="color: #c8a86a; letter-spacing: 0.3em; padding-left: 12px; border-left: 1px solid #5c5142">LEGACY</span>
+</a>
+<p style="font-size: 14.5px; line-height: 1.9; color: #d9d0bd; max-width: 30em">ライフサイエンス実験の暗黙知を体系的に収集・構造化し、次世代に継承可能な形に変換する研究プロジェクト。</p>
+<div style="display: flex; flex-direction: column; font-size: 13px; line-height: 1.7; color: #b8aa8e">
+<a href="https://www.jst.go.jp/k-program/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; min-height: 44px; text-decoration: underline; text-underline-offset: 4px">JST K Program / 経済安全保障重要技術育成</a>
+<a href="https://www.jst.go.jp/k-program/program/cyber4.html" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; min-height: 44px; text-decoration: underline; text-underline-offset: 4px">ノウハウの効果的な伝承につながる人作業伝達等の研究デジタル基盤技術</a>
+</div>
+</div>
+<div class="fg fsec" style="flex: 1 1 150px">
+<div class="mono" style="color: #c8a86a; margin-bottom: 8px">Sections</div>
+<a href="#problem">01 Problem</a>
+<a href="#mission">02 Mission</a>
+<a href="#pillars">03 Pillars</a>
+<a href="#structure">04 Structure</a>
+<a href="#benefits">05 Why Join</a>
+<a href="#action">06 Get Involved</a>
+<a href="#team">07 Team</a>
+</div>
+<div class="fg" style="flex: 1 1 190px">
+<div class="mono" style="color: #c8a86a; margin-bottom: 8px">Channels</div>
+<a href="#post">事例投稿（準備中）</a>
+<a href="https://www.youtube.com/@BioSkill-Legacy" target="_blank" rel="noopener noreferrer">YouTube Channel</a>
+<a href="https://github.com/BioSkillDX" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a href="../index.html">BioSkillDX トップ</a>
+<a href="https://forms.gle/Hz3kwcN9M9HQGWse6" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+</div>
+</div>
+<div class="wm" aria-hidden="true">LEGACY</div>
+</div>
+<div style="border-top: 1px solid #4a4033; position: relative; background: #14110d">
+<div class="wrap mono" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; padding-block: 18px; color: #b8aa8e; font-size: 11px">
+<span>© 2026 BioSkillDX · All rights reserved</span><span>Doc · BSL-2026.03 / v0.1.3</span>
+</div>
+</div>
+</footer>
 
-        <!-- Operation Loop -->
-        <div class="structure__loop-wrap fade-in">
-          <div class="structure__loop-head">
-            <div class="structure__loop-title">運用ループ — Continuous Operation</div>
-            <div class="structure__loop-sub">FIG. L-02 · 抽出 → 構造化 → 記録 → 紐づけ → 更新</div>
-          </div>
-          <svg viewBox="0 0 1100 360" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="loop-grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#2d251c" stroke-width=".5"/>
-              </pattern>
-            </defs>
-            <rect x="0" y="0" width="1100" height="360" fill="url(#loop-grid)" opacity=".5"/>
+<div class="mbar">
+<a href="#post">
+<span>事例を投稿する</span>
+<span class="mono" style="display: flex; align-items: center; gap: 8px; font-size: 11.5px; letter-spacing: 0.08em">5 min · 匿名可<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"></path></svg></span>
+</a>
+</div>
 
-            <!-- 01 抽出 -->
-            <g>
-              <rect x="70" y="120" width="160" height="120" fill="none" stroke="#c8a86a" stroke-width="1.2"/>
-              <rect x="70" y="120" width="160" height="28" fill="#c8a86a"/>
-              <text x="82" y="139" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#14110d" letter-spacing="2">01 · EXTRACT</text>
-              <text x="150" y="178" text-anchor="middle" font-family="Lato, Noto Sans JP, sans-serif" font-size="24" font-weight="900" fill="#fff">抽出</text>
-              <text x="150" y="208" text-anchor="middle" font-family="Lato, Noto Sans JP, sans-serif" font-size="10" fill="#b8aa8e">熟練者の語りから</text>
-              <text x="150" y="222" text-anchor="middle" font-family="Lato, Noto Sans JP, sans-serif" font-size="10" fill="#b8aa8e">不記載情報を取り出す</text>
-              <line x1="232" y1="180" x2="268" y2="180" stroke="#c8a86a" stroke-width="1.2"/>
-              <polyline points="262,172 270,180 262,188" fill="none" stroke="#c8a86a" stroke-width="1.2"/>
-            </g>
+</div>
 
-            <!-- 02 構造化 -->
-            <g>
-              <rect x="270" y="120" width="160" height="120" fill="none" stroke="#c8a86a" stroke-width="1.2"/>
-              <rect x="270" y="120" width="160" height="28" fill="#c8a86a"/>
-              <text x="282" y="139" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#14110d" letter-spacing="2">02 · STRUCTURE</text>
-              <text x="350" y="178" text-anchor="middle" font-family="Lato, Noto Sans JP, sans-serif" font-size="24" font-weight="900" fill="#fff">構造化</text>
-              <text x="350" y="208" text-anchor="middle" font-family="Lato, Noto Sans JP, sans-serif" font-size="10" fill="#b8aa8e">What / Why / When の</text>
-              <text x="350" y="222" text-anchor="middle" font-family="Lato, Noto Sans JP, sans-serif" font-size="10" fill="#b8aa8e">項目に整理する</text>
-              <line x1="432" y1="180" x2="468" y2="180" stroke="#c8a86a" stroke-width="1.2"/>
-              <polyline points="462,172 470,180 462,188" fill="none" stroke="#c8a86a" stroke-width="1.2"/>
-            </g>
-
-            <!-- 03 記録 -->
-            <g>
-              <rect x="470" y="120" width="160" height="120" fill="none" stroke="#c8a86a" stroke-width="1.2"/>
-              <rect x="470" y="120" width="160" height="28" fill="#c8a86a"/>
-              <text x="482" y="139" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#14110d" letter-spacing="2">03 · RECORD</text>
-              <text x="550" y="178" text-anchor="middle" font-family="Lato, Noto Sans JP, sans-serif" font-size="24" font-weight="900" fill="#fff">記録</text>
-              <text x="550" y="208" text-anchor="middle" font-family="Lato, Noto Sans JP, sans-serif" font-size="10" fill="#b8aa8e">動画・音声・注釈に</text>
-              <text x="550" y="222" text-anchor="middle" font-family="Lato, Noto Sans JP, sans-serif" font-size="10" fill="#b8aa8e">紐づけて保存する</text>
-              <line x1="632" y1="180" x2="668" y2="180" stroke="#c8a86a" stroke-width="1.2"/>
-              <polyline points="662,172 670,180 662,188" fill="none" stroke="#c8a86a" stroke-width="1.2"/>
-            </g>
-
-            <!-- 04 紐づけ -->
-            <g>
-              <rect x="670" y="120" width="160" height="120" fill="none" stroke="#c8a86a" stroke-width="1.2"/>
-              <rect x="670" y="120" width="160" height="28" fill="#c8a86a"/>
-              <text x="682" y="139" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#14110d" letter-spacing="2">04 · LINK</text>
-              <text x="750" y="178" text-anchor="middle" font-family="Lato, Noto Sans JP, sans-serif" font-size="24" font-weight="900" fill="#fff">紐づけ</text>
-              <text x="750" y="208" text-anchor="middle" font-family="Lato, Noto Sans JP, sans-serif" font-size="10" fill="#b8aa8e">結果指標</text>
-              <text x="750" y="222" text-anchor="middle" font-family="Lato, Noto Sans JP, sans-serif" font-size="10" fill="#b8aa8e">（成功・失敗）に接続</text>
-              <line x1="832" y1="180" x2="868" y2="180" stroke="#c8a86a" stroke-width="1.2"/>
-              <polyline points="862,172 870,180 862,188" fill="none" stroke="#c8a86a" stroke-width="1.2"/>
-            </g>
-
-            <!-- 05 更新 -->
-            <g>
-              <rect x="870" y="120" width="160" height="120" fill="none" stroke="#c8a86a" stroke-width="1.2"/>
-              <rect x="870" y="120" width="160" height="28" fill="#c8a86a"/>
-              <text x="882" y="139" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#14110d" letter-spacing="2">05 · UPDATE</text>
-              <text x="950" y="178" text-anchor="middle" font-family="Lato, Noto Sans JP, sans-serif" font-size="24" font-weight="900" fill="#fff">更新</text>
-              <text x="950" y="208" text-anchor="middle" font-family="Lato, Noto Sans JP, sans-serif" font-size="10" fill="#b8aa8e">テンプレ・項目集を</text>
-              <text x="950" y="222" text-anchor="middle" font-family="Lato, Noto Sans JP, sans-serif" font-size="10" fill="#b8aa8e">継続的に育てる</text>
-            </g>
-
-            <!-- return arrow -->
-            <path d="M 950 240 L 950 290 L 150 290 L 150 240" fill="none" stroke="#c8a86a" stroke-width="1" stroke-dasharray="6,4"/>
-            <polyline points="142,250 150,238 158,250" fill="none" stroke="#c8a86a" stroke-width="1"/>
-            <rect x="500" y="278" width="100" height="22" fill="#14110d" stroke="#c8a86a" stroke-width="1"/>
-            <text x="550" y="293" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#c8a86a">RETURN / 反復</text>
-
-            <text x="20" y="50" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#8c8170">FIG. L-02 / OPERATION LOOP</text>
-            <text x="1080" y="50" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#8c8170">CONTINUOUS · 継続稼働</text>
-          </svg>
-        </div>
-      </div>
-    </section>
-
-    <!-- §05 Why Join (Benefits) -->
-    <section class="section" id="benefits">
-      <div class="section__head fade-in">
-        <div>
-          <div class="section__id">SECTION · 05 / WHY JOIN</div>
-          <h2 class="section__title">なぜ、<span class="section__title-accent">参加するのか。</span></h2>
-        </div>
-        <p class="section__sub">
-          BioSkill-Legacyは、参加した一人ひとりに具体的な見返りがある。あなたが熟練者でも、立ち上げ中の研究室でも、学生でも、メーカーでも — 受け取れる価値と、最初の一歩がある。
-        </p>
-      </div>
-
-      <div class="benefits__body">
-        <div class="benefit fade-in">
-          <div class="benefit__who">
-            <div class="benefit__who-tag">FOR · VETERAN RESEARCHERS</div>
-            <div class="benefit__who-name">熟練研究者</div>
-            <div class="benefit__who-serial">STAKE · S-01</div>
-          </div>
-          <div>
-            <p class="benefit__quote"><span class="benefit__quote-mark">"</span>口頭で消えていた判断が、引用される知見になる。</p>
-            <ul class="benefit__list">
-              <li>同じ説明を何度もしなくてよくなる — 育成負荷の軽減</li>
-              <li>あなたの判断と工夫が、クレジット付きで記録される</li>
-              <li>自分でも言語化していなかった勘所が、構造化されて返ってくる</li>
-            </ul>
-          </div>
-          <div class="benefit__step">
-            <div class="benefit__step-label">FIRST STEP</div>
-            <div class="benefit__step-title">30分の聞き取りから</div>
-            <p class="benefit__step-body">短時間のインタビューで、まず1つの判断ポイントを言語化します。撮影・データ提供は段階を踏んで決められます。</p>
-            <a href="#action" class="benefit__step-link">
-              この入り口から始める
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="benefit fade-in">
-          <div class="benefit__who">
-            <div class="benefit__who-tag">FOR · LABS & PIs</div>
-            <div class="benefit__who-name">研究室・PI</div>
-            <div class="benefit__who-serial">STAKE · S-02</div>
-          </div>
-          <div>
-            <p class="benefit__quote"><span class="benefit__quote-mark">"</span>次のメンバーが、あなたを呼ばずに立ち上がる。</p>
-            <ul class="benefit__list">
-              <li>属人化した手順が明文化され、引き継ぎコストが下がる</li>
-              <li>新規メンバーが独立して動けるまでの期間が短縮される</li>
-              <li>再現できない時の原因切り分けが速くなる</li>
-            </ul>
-          </div>
-          <div class="benefit__step">
-            <div class="benefit__step-label">FIRST STEP</div>
-            <div class="benefit__step-title">典型プロトコル1本から</div>
-            <p class="benefit__step-body">ラボで最もよく使う手技を1本選び、共同で構造化します。成果はラボのオンボーディング教材として残ります。</p>
-            <a href="#action" class="benefit__step-link">
-              この入り口から始める
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="benefit fade-in">
-          <div class="benefit__who">
-            <div class="benefit__who-tag">FOR · EARLY-CAREER</div>
-            <div class="benefit__who-name">若手研究者・学生</div>
-            <div class="benefit__who-serial">STAKE · S-03</div>
-          </div>
-          <div>
-            <p class="benefit__quote"><span class="benefit__quote-mark">"</span>先輩の頭の中が、手元で読める。</p>
-            <ul class="benefit__list">
-              <li>"なぜそうするか" — 判断の根拠と条件分岐が注釈付きで得られる</li>
-              <li>成功例だけでなく、失敗パターンと回避法から学べる</li>
-              <li>自分の判断と熟練者の判断を、同じ動画で照合できる</li>
-            </ul>
-          </div>
-          <div class="benefit__step">
-            <div class="benefit__step-label">FIRST STEP</div>
-            <div class="benefit__step-title">ケーススタディを読む</div>
-            <p class="benefit__step-body">整理済みの事例を読むだけでも価値があります。投稿・コメントで参加するとさらに学習の幅が広がります。</p>
-            <a href="#action" class="benefit__step-link">
-              この入り口から始める
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="benefit fade-in">
-          <div class="benefit__who">
-            <div class="benefit__who-tag">FOR · INDUSTRY PARTNERS</div>
-            <div class="benefit__who-name">企業・メーカー</div>
-            <div class="benefit__who-serial">STAKE · S-04</div>
-          </div>
-          <div>
-            <p class="benefit__quote"><span class="benefit__quote-mark">"</span>現場で何が詰まっているか、ようやく見える。</p>
-            <ul class="benefit__list">
-              <li>ユーザの実環境での製品挙動と、運用上の詰まりポイントが可視化</li>
-              <li>観察された不具合・要望が、製品改善・新規提案の起点になる</li>
-              <li>実験環境全体（ベンチ・機材・試薬・運用）の改善検討に接続できる</li>
-            </ul>
-          </div>
-          <div class="benefit__step">
-            <div class="benefit__step-label">FIRST STEP</div>
-            <div class="benefit__step-title">共同テーマの相談から</div>
-            <p class="benefit__step-body">関心領域・対象実験についてミーティングを設定します。データへのアクセス条件はテーマごとに合意します。</p>
-            <a href="#action" class="benefit__step-link">
-              この入り口から始める
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- §06 Get Involved -->
-    <section class="section section--alt" id="action">
-      <div class="section__head fade-in">
-        <div>
-          <div class="section__id">SECTION · 06 / GET INVOLVED</div>
-          <h2 class="section__title">参加する。<span class="section__title-accent">経験を、遺産に。</span></h2>
-        </div>
-        <p class="section__sub">
-          参加の入り口は複数ある。5分で投稿できる事例から、共同検証・拠点利用まで。あなたの関わり方を選んでほしい。
-        </p>
-      </div>
-
-      <div class="action__cta fade-in">
-        <div>
-          <div class="action__cta-eyebrow">PRIMARY · 5 MIN</div>
-          <h3 class="action__cta-title">現場で起きた一つの事例を、<br>投稿してください。</h3>
-          <p class="action__cta-body">失敗談・突破口・現場の工夫 — いただいた事例は、収集開始後に整理・構造化し、教材として還元していきます。匿名で構いません。</p>
-        </div>
-        <div class="action__cta-side">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2mU52qhlUtysjfHWljK88Lg0uYSXrhqlgi0lYbDvRJ2mz6A/viewform" target="_blank" rel="noopener noreferrer" class="action__cta-btn">
-            <span>事例を投稿する（β）</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-          </a>
-          <div class="action__cta-meta">暫定運用 · お問い合わせフォーム経由</div>
-        </div>
-        <p class="action__cta-note">
-          現在は準備期間中です。事例の投稿は、当面 BioSkillDX 共通のお問い合わせフォームで受け付けています（まずは関心のご連絡として歓迎します）。本格的な事例収集の開始は、追ってこのページでお知らせします。
-        </p>
-      </div>
-
-      <div class="action__cats fade-in">
-        <div class="action__cat">
-          <div class="action__cat-id">CAT · 01 · TROUBLESHOOTING NIGHT</div>
-          <h4 class="action__cat-title">失敗談・ヒヤリハット</h4>
-          <p class="action__cat-body">何が見えて、どう判断し、何を変え、どうなったか。観察と介入のチェーン。</p>
-          <div class="action__cat-eg">RECOMMENDED · 月1回 / 短時間OK <b>· 推奨</b></div>
-        </div>
-        <div class="action__cat">
-          <div class="action__cat-id">CAT · 02 · LAB HERO STORIES</div>
-          <h4 class="action__cat-title">困りごとの解決事例</h4>
-          <p class="action__cat-body">現場で試行錯誤して見つけた突破口を共有する。再利用可能な突破事例。</p>
-          <div class="action__cat-eg">ANYTIME · ストック型 <b>· 推奨</b></div>
-        </div>
-        <div class="action__cat">
-          <div class="action__cat-id">CAT · 03 · LAB HACKS & GEAR</div>
-          <h4 class="action__cat-title">実験の工夫 · 機材Tips</h4>
-          <p class="action__cat-body">道具や環境の改善で成功率を上げた事例。小さな工夫こそ価値がある。</p>
-          <div class="action__cat-eg">ANYTIME · 写真歓迎 <b>· 推奨</b></div>
-        </div>
-      </div>
-
-      <div class="action__steps-wrap fade-in">
-        <div class="action__steps-head">
-          <div class="action__steps-title">参加の段階 — Engagement Protocol</div>
-          <div class="action__steps-sub">PROTO · 01 → 04 / 任意の段階から</div>
-        </div>
-        <div class="action__steps">
-          <div class="action__step">
-            <div class="action__step-num">STEP · 01</div>
-            <h4 class="action__step-title">ライト参加</h4>
-            <p class="action__step-body">短時間の聞き取り、プロトコルレビュー、質問項目へのコメント。</p>
-            <div class="action__step-effort">EFFORT · <span>30 MIN</span></div>
-          </div>
-          <div class="action__step">
-            <div class="action__step-num">STEP · 02</div>
-            <h4 class="action__step-title">データ提供</h4>
-            <p class="action__step-body">最小構成（俯瞰・側面・対象・プロトコル・音声）での撮影。</p>
-            <div class="action__step-effort">EFFORT · <span>2–4 H</span></div>
-          </div>
-          <div class="action__step">
-            <div class="action__step-num">STEP · 03</div>
-            <h4 class="action__step-title">共同で検証</h4>
-            <p class="action__step-body">結果指標（成功・失敗・QC）と紐づけたケーススタディ作成。</p>
-            <div class="action__step-effort">EFFORT · <span>JOINT</span></div>
-          </div>
-          <div class="action__step">
-            <div class="action__step-num">STEP · 04</div>
-            <h4 class="action__step-title">拠点利用</h4>
-            <p class="action__step-body">整備されたベンチ・機材環境での実験の実施と記録。</p>
-            <div class="action__step-effort">EFFORT · <span>ON-SITE</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="action__channels fade-in">
-        <a href="https://www.youtube.com/@BioSkill-Legacy" target="_blank" rel="noopener noreferrer" class="action__channel">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          <span>YouTube チャンネル</span>
-        </a>
-        <a href="https://github.com/BioSkillDX" target="_blank" rel="noopener noreferrer" class="action__channel">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-          <span>GitHub</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- §07 Team -->
-    <section class="section" id="team">
-      <div class="section__head fade-in">
-        <div>
-          <div class="section__id">SECTION · 07 / TEAM</div>
-          <h2 class="section__title">運営する人びと。<span class="section__title-accent">Core team.</span></h2>
-        </div>
-        <p class="section__sub">
-          BioSkill-Legacyは、BioSkillDXの中で、生命科学領域の研究者・データエンジニア・コミュニケーターが手を組んで進めている研究プロジェクトです。
-        </p>
-      </div>
-
-      <div class="team__grid">
-        <div class="team__card fade-in">
-          <div class="team__card-ref">MEMBER · T-01</div>
-          <div class="team__portrait"><img src="../img/member/sasagawa-yohei.png" alt="笹川 洋平" data-fallback="笹"></div>
-          <div class="team__name">笹川 洋平</div>
-          <div class="team__aff">東京科学大学</div>
-        </div>
-        <div class="team__card fade-in">
-          <div class="team__card-ref">MEMBER · T-02</div>
-          <div class="team__portrait"><img src="../img/member/ohta-tazro.jpg" alt="大田 達郎" data-fallback="大"></div>
-          <div class="team__name">大田 達郎</div>
-          <div class="team__aff">千葉大学</div>
-        </div>
-        <div class="team__card fade-in">
-          <div class="team__card-ref">MEMBER · T-03</div>
-          <div class="team__portrait"><img src="../img/member/ono-hiromasa.jpg" alt="小野 浩雅" data-fallback="小"></div>
-          <div class="team__name">小野 浩雅</div>
-          <div class="team__aff">プラチナバイオ株式会社</div>
-        </div>
-        <div class="team__card fade-in">
-          <div class="team__card-ref">MEMBER · T-04</div>
-          <div class="team__portrait"><img src="../img/member/nikaido-itoshi.jpg" alt="二階堂 愛" data-fallback="二"></div>
-          <div class="team__name">二階堂 愛</div>
-          <div class="team__aff">東京科学大学</div>
-        </div>
-        <div class="team__card fade-in">
-          <div class="team__card-ref">MEMBER · T-05</div>
-          <div class="team__portrait"><img src="../img/member/fujie-manabu.jpg" alt="藤江 学" data-fallback="藤"></div>
-          <div class="team__name">藤江 学</div>
-          <div class="team__aff">沖縄科学技術大学院大学</div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer__inner">
-      <div>
-        <div class="footer__brand">
-          <a href="https://bioskilldx.github.io/legacy/" style="display:flex;align-items:center;gap:12px;">
-            <img src="../img/logo.svg" alt="BioSkillDX">
-            <span class="footer__brand-sub">LEGACY</span>
-          </a>
-        </div>
-        <p class="footer__about">ライフサイエンス実験の暗黙知を体系的に収集・構造化し、次世代に継承可能な形に変換する研究プロジェクト。</p>
-        <p class="footer__about footer__about--mono">
-          <a href="https://www.jst.go.jp/k-program/" target="_blank" rel="noopener noreferrer">JST K Program / 経済安全保障重要技術育成</a><br>
-          <a href="https://www.jst.go.jp/k-program/program/cyber4.html" target="_blank" rel="noopener noreferrer">ノウハウの効果的な伝承につながる人作業伝達等の研究デジタル基盤技術</a>
-        </p>
-      </div>
-      <div class="footer__group">
-        <div class="footer__group-title">SECTIONS</div>
-        <a href="#problem">01 Problem</a>
-        <a href="#mission">02 Mission</a>
-        <a href="#pillars">03 Pillars</a>
-        <a href="#structure">04 Structure</a>
-        <a href="#benefits">05 Why Join</a>
-        <a href="#action">06 Get Involved</a>
-        <a href="#team">07 Team</a>
-      </div>
-      <div class="footer__group">
-        <div class="footer__group-title">CHANNELS</div>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2mU52qhlUtysjfHWljK88Lg0uYSXrhqlgi0lYbDvRJ2mz6A/viewform" target="_blank" rel="noopener noreferrer">事例投稿（準備中）</a>
-        <a href="https://www.youtube.com/@BioSkill-Legacy" target="_blank" rel="noopener noreferrer">YouTube Channel</a>
-        <a href="https://github.com/BioSkillDX" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="../index.html">BioSkillDX トップ</a>
-        <a href="https://forms.gle/Hz3kwcN9M9HQGWse6" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <div>© 2026 BIOSKILLDX · ALL RIGHTS RESERVED</div>
-      <div>DOC · BSL-2026.03 / v0.1.3</div>
-    </div>
-  </footer>
-
-  <script src="js/legacy.js"></script>
+<script src="js/legacy.js"></script>
 </body>
 
 </html>

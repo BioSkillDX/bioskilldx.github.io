@@ -209,7 +209,7 @@ function detailPage(item, type) {
 function sitemap(news, events) {
   const staticEntries = [
     ['/', '2026-04-20', 'weekly', '1.0'],
-    ['/legacy/', '2026-06-18', 'weekly', '0.9'],
+    ['/legacy/', '2026-10-02', 'weekly', '0.9'],
     ['/news.html', '2026-04-20', 'weekly', '0.8'],
     ['/events.html', '2026-03-21', 'weekly', '0.5'],
     ['/brand-assets.html', '2026-03-21', 'monthly', '0.4']
