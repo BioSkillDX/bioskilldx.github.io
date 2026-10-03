@@ -44,7 +44,8 @@
 | `css/style.css` | 全スタイル定義 |
 | `refs/brand-constants.md` | カラー定数定義（パープル `#A68EC2` 基調、Dark/Light モード） |
 | `assets/`, `img/` | ロゴ・写真・アイコン |
-| `legacy/` | 旧版コンテンツ（参照用、原則編集しない） |
+| `legacy/` | BioSkill-Legacy プロジェクトの現役ページ（公開・インデックス対象）。`index.html` / `css/legacy.css` / `js/legacy.js` / `img/` で完結し、親サイトの CSS・JS は読まない |
+| `legacy/20260515_redesign_handoff/` | 2026-05 版デザインの引き継ぎ資料（参照用、編集しない） |
 | `googled16d39596a4d0eec.html` | Google Search Console 認証ファイル（削除厳禁） |
 
 ## ブランド規約
@@ -70,7 +71,7 @@
 - **画像最適化**: `img/`, `assets/` への新規画像は Web 用に圧縮（数百 KB 以内目標）
 - **HTML / JS の変更影響範囲**: ページ間共通レイアウト変更は `main.js` 一箇所で完結するか確認、各ページに散在させない
 - **Google Search Console / Analytics**: 認証ファイル `googled16d39596a4d0eec.html` を削除しない
-- **`legacy/` 配下**: 旧サイト保管用。SEO 観点で `robots.txt` を見直すこと（必要なら `Disallow: /legacy/`）
+- **`legacy/` 配下**: BioSkill-Legacy の現役ページ。親サイトとは別の配色（Field-Lab Schematic: 黒・紙色・ゴールド）と書体で、`refs/brand-constants.md` のパープル規定の対象外。レスポンシブは `.bsl` の container query（1100 / 860 / 720px）。投稿導線は `#post`、参加の段階は `#steps` に集約している。更新したら `tools/generate-detail-pages.mjs` の `/legacy/` lastmod を直して sitemap を再生成する
 
 ## 開発フロー
 
