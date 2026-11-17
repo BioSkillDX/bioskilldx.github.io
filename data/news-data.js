@@ -1,6 +1,43 @@
 var NEWS_DATA = {
   "news": [
     {
+      "id": "11",
+      "date": "2026.11.17",
+      "category": {
+        "ja": "お知らせ",
+        "en": "Announcement"
+      },
+      "title": {
+        "ja": "BMB2026でBioSkill-Legacy交流会を開催します（12月3日）",
+        "en": "BioSkill-Legacy Meetup at BMB2026 on December 3"
+      },
+      "link": {
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSfd5xERV76cM3_rN_rfCQF9PX9YoS8PKtxcg_Lv_oI6IcxxSQ/viewform",
+        "text": {
+          "ja": "事前投稿フォームを開く",
+          "en": "Open the submission form (in Japanese)"
+        }
+      },
+      "content": {
+        "ja": [
+          "12月3日（木）19:00から20:30まで、BMB2026（パシフィコ横浜）の交流イベントとして「BioSkill-Legacy 交流会：実験の『書かれない判断』を持ち寄り、未来へ残す仲間を探す夜」を開きます。会場は会議センター 3F 302 特設会場内の R5 です。大会の<a href=\"https://www.aeplan.co.jp/bmb2026/event_today/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">交流イベント一覧</a>にも掲載されています（12月3日、3NE-R5）。",
+          "「手順どおりなのに再現しない」。実験の成否を分けるのが、プロトコルに書かれない小さな判断であることは少なくありません。この会では、実験が再現できず困った話や、観察や工夫で誰かを助けた話を持ち寄り、「何に気づき、どう判断し、何をして、どうなったか」を少人数で語り合います。",
+          "予約や準備は不要で、途中の出入りも自由です。聞くだけの参加も歓迎します。会場での録音や録画はしません。",
+          "当日の話題にする投稿を、11月26日（木）まで募集しています。短文で構いません。募集するのは、トラブルや失敗談、ヒヤリハット（Troubleshooting Night）、誰かの困りごとや難題を解決した体験（Lab Hero Stories）、便利技や工夫、新機材や新キットの推しポイント（Lab Hacks & Gear）の3種類です。",
+          "氏名や所属の入力は不要です。会場で紹介するのは同意いただいた投稿だけで、氏名や所属は出しません。投稿の使い道はフォームの説明をご覧ください。",
+          "BioSkill-Legacy では、JST K Program の研究開発プロジェクト BioSkillDX の一環として、実験現場の困りごとや、解決に役立った観察や工夫を集め、研究現場の改善につなげる活動を進めています。今回のフォームの投稿は、この収集には含めません。活動については<a href=\"https://bioskilldx.github.io/legacy/\">BioSkill-Legacy のページ</a>をご覧ください。"
+        ],
+        "en": [
+          "BioSkill-Legacy will host a meetup at BMB2026, held at Pacifico Yokohama, on Thursday, December 3, from 19:00 to 20:30. The venue is Room R5 in the special event area within Room 302, on the third floor of the Conference Center. The meetup appears as 3NE-R5 in the meeting's <a href=\"https://www.aeplan.co.jp/bmb2026/event_today/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">list of networking events</a>.",
+          "Experiments often succeed or fail on small judgment calls that never make it into the protocol. At the meetup, participants bring stories about experiments they couldn't reproduce and about observations or tricks that helped someone else. In small groups, we talk through what each person noticed, what they decided, what they did, and how it turned out.",
+          "No registration or preparation is needed, and you can come and go at any time. You are welcome to just listen. We will not record audio or video.",
+          "Until Thursday, November 26, we are collecting stories to discuss at the meetup. A few lines are enough. We welcome three kinds: trouble, failures, and near misses (Troubleshooting Night); times you solved someone else's problem or overcame a tough challenge (Lab Hero Stories); and handy tricks or favorite new equipment and kits (Lab Hacks & Gear).",
+          "You don't need to give your name or affiliation. At the meetup, we will share submissions only with the authors' consent, omitting names and affiliations. The form explains how submissions are used.",
+          "BioSkill-Legacy is part of BioSkillDX, a research and development project under the JST K Program. It collects the problems researchers run into at the bench, along with the observations and tricks that solved them, to improve research practice. Submissions to this form are not part of that collection. Learn more on the <a href=\"https://bioskilldx.github.io/legacy/\">BioSkill-Legacy page</a>."
+        ]
+      }
+    },
+    {
       "id": "10",
       "date": "2026.11.10",
       "category": {
