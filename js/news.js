@@ -137,7 +137,7 @@
               <span class="news-page__category">${item.category[currentLang]}</span>
             </div>
             <h2 class="news-page__title">${item.title[currentLang]}</h2>
-            <p class="news-page__excerpt">${item.content[currentLang].join(' ')}</p>
+            <p class="news-page__excerpt">${item.content[currentLang].join(' ').replace(/<[^>]*>/g, '')}</p>
           </div>
           <div class="news-page__arrow">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
