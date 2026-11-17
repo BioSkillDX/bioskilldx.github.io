@@ -1,6 +1,41 @@
 var NEWS_DATA = {
   "news": [
     {
+      "id": "10",
+      "date": "2026.11.10",
+      "category": {
+        "ja": "プレスリリース",
+        "en": "Press Release"
+      },
+      "title": {
+        "ja": "日立製作所がBioSkillDXプロジェクトの成果として、AIコーチング技術「AIDE」を発表しました",
+        "en": "Hitachi Announces AIDE, an AI Coaching Technology Developed in the BioSkillDX Project"
+      },
+      "link": {
+        "url": "https://rd.hitachi.co.jp/_ct/17875062",
+        "text": {
+          "ja": "日立の発表記事を見る",
+          "en": "Read Hitachi's announcement (in Japanese)"
+        }
+      },
+      "content": {
+        "ja": [
+          "株式会社日立製作所は2026年11月10日、AIコーチング技術「AIDE（Automated Instruction via Distilled Expertise）」の開発を発表しました。学習者の動作映像だけから、動作の改善点を文章で助言する技術です。BioSkillDXプロジェクトで日立が担う「個々の技能レベルに合わせた最適な作業支援・フィードバック」の、第一段階の成果にあたります。",
+          "AIDEは2段階で学習します。まず、学習者と熟練者の動作の組から改善アドバイスを生成する教師AIを学習し、その知識を、学習者の動作だけを入力とする生徒AIに引き継ぎます。熟練者の模範動作は学習のときにだけ使うので、利用のたびに模範動作を用意して学習者ごとに対応付ける手間がかかりません。",
+          "スポーツ動作の公開データセット「ExpertAF」を用い、指導者の解説に基づくアドバイス文との近さで評価したところ、利用時にも模範動作を使う従来の構成と同等水準でした。本成果の論文は、国際会議ACM Multimedia 2026（11月10日から14日）で口頭発表に採択されています。",
+          "日立は今後、BioSkillDXプロジェクトにおいて、ライフサイエンス実験の技能継承と作業支援に向けた研究開発を進めます。",
+          "論文：<a href=\"https://arxiv.org/abs/2608.03047\" target=\"_blank\" rel=\"noopener noreferrer\">AIDE: Automated Instruction via Distilled Expertise for Reference-Free Motor Skill Coaching</a>（arXiv）"
+        ],
+        "en": [
+          "On November 10, 2026, Hitachi, Ltd. announced AIDE (Automated Instruction via Distilled Expertise), an AI coaching technology that generates improvement advice from a video of the learner's movements alone. It comes out of the first stage of Hitachi's work in the BioSkillDX project, where the company is responsible for tailoring work support and feedback to each person's skill level.",
+          "AIDE is trained in two stages. A teacher model first learns to generate advice from paired learner and expert movements. A student model then inherits that knowledge and works from the learner's movements alone. Expert demonstrations are needed only during training, so there is no need to prepare one and match it to each learner every time the system is used.",
+          "On ExpertAF, a public dataset of sports movements, Hitachi measured how closely the generated advice matched instructors' comments. AIDE scored on par with conventional setups that still use expert demonstrations at use time. The paper has been accepted as an oral presentation at ACM Multimedia 2026.",
+          "Hitachi will continue its BioSkillDX research on passing on laboratory skills and supporting experimental work in the life sciences.",
+          "Paper: <a href=\"https://arxiv.org/abs/2608.03047\" target=\"_blank\" rel=\"noopener noreferrer\">AIDE: Automated Instruction via Distilled Expertise for Reference-Free Motor Skill Coaching</a> (arXiv)"
+        ]
+      }
+    },
+    {
       "id": "9",
       "date": "2026.06.19",
       "category": {
