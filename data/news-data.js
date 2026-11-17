@@ -8,8 +8,8 @@ var NEWS_DATA = {
         "en": "Announcement"
       },
       "title": {
-        "ja": "BMB2026でBioSkill-Legacy交流会を開催します（12月3日）",
-        "en": "BioSkill-Legacy Meetup at BMB2026 on December 3"
+        "ja": "BMB2026でシンポジウム発表と交流会の開催を行います",
+        "en": "Symposium Talk and BioSkill-Legacy Meetup at BMB2026"
       },
       "link": {
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSfd5xERV76cM3_rN_rfCQF9PX9YoS8PKtxcg_Lv_oI6IcxxSQ/viewform",
